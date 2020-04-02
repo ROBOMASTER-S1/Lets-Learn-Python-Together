@@ -1,6 +1,11 @@
 '''The Class Function:'''
 '''
-The class function in Python is like a super function, which can have multiple def functions right inside it. Class functions may consist of parent classes and child classes alike. The child classes inherit the parent classes, which means giving functions the ability to change their behavior outcome, throughout a program's execution run. You can use as many parent/upper classes you wish. However, only one child class can be used, which is always the last class act. You don't need to invoke def functions to use classes either. However, we are going to learn about both types such as this program example below, which doesn't invoke def functions at all.
+The class function in Python is like a super function, which can have multiple def functions right inside it. \
+Class functions may consist of parent classes and child classes alike. The child classes inherit the parent \
+classes, which means giving functions the ability to change their behavior outcome, throughout a program's \
+execution run. You can use as many parent/upper classes you wish. However, only one child class can be used, \
+which is always the last class act. You don't need to invoke def functions to use classes either. However, we \
+are going to learn about both types such as this program example below, which doesn't invoke def functions at all.
 '''
 # Type and execute/run the program example below and see what
 # happens.
