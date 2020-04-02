@@ -1,6 +1,11 @@
 '''Print Statement Examples:'''
 '''
-Print statement values are encased with round brackets '()' on each end of the 'print' statement's value. Quotation marks (" ") denote what kind of 'print' statement value it is. If the value is a string, then no quotation marks are used inside the 'print' statement's value. However, quotation marks are used within the 'print' statement's string value instead. Note: double quotation marks (" ") or single quotation marks (' ') can be used in 'print' statements, string values, tuples and lists alike. If the value is not a string, then quotation marks are used inside the 'print' statement's value itself, such as these two 'print' statement examples below.
+Print statement values are encased with round brackets '()' on each end of the 'print' statement's value. \
+Quotation marks (" ") denote what kind of 'print' statement value it is. If the value is a string, then no \
+quotation marks are used inside the 'print' statement's value. However, quotation marks are used within the \
+'print' statement's string value instead. Note: double quotation marks (" ") or single quotation marks (' ') \
+can be used in 'print' statements, string values, tuples and lists alike. If the value is not a string, then \
+quotation marks are used inside the 'print' statement's value itself, such as these two 'print' statement examples below.
 '''
 # Print statement examples:
 
