@@ -1,2 +1,2 @@
 # Let's-Learn-Python-Together
-Learn about Python Programming
+Learn about Python Programming with me.
