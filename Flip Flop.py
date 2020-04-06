@@ -23,4 +23,5 @@ while True:
     
     else:
         print('\nYou can\'t cheat now! Do you flip? or do you flop?')
+        
 input('\nEnd of program. Press Enter to quit.')
