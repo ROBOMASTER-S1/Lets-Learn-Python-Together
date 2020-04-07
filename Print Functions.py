@@ -33,7 +33,12 @@ print(my_string_example)
 
 '''Fancy Print Statement Examples:'''
 '''
-All 'print' statements and all 'input' statements also support the '\n' line-break implementer, which acts like a normal line-break in between sentences. The '\n' line-break implementer can also be implemented into string values, tuple values and list values alike. From here on, the '\n' line-break implementer will be implemented into all 'print' statements, 'input' statements, string values, tuple values and list values. The '\n' line-break implementer makes the screen printout much more cleaner and nicer looking with actual line-breaks in between sentences. Note: two '\n\n' or more '\n\n\n' line-break implementers can be implemented at once within a single 'print' statement.
+All 'print' statements and all 'input' statements also support the '\n' line-break implementer, which acts like a normal \
+line-break in between sentences. The '\n' line-break implementer can also be implemented into string values, tuple values \
+and list values alike. From here on, the '\n' line-break implementer will be implemented into all 'print' statements, \
+'input' statements, string values, tuple values and list values. The '\n' line-break implementer makes the screen printout \
+much more cleaner and nicer looking with actual line-breaks in between sentences. Note: two '\n\n' or more '\n\n\n' \
+line-break implementers can be implemented at once within a single 'print' statement.
 '''
 # Here are some 'print' statement examlples of the '\n' line-break implementer.
 
@@ -167,4 +172,4 @@ print('Python '*45)
 # including one space is twelve characters long. The printout on the screen will only
 # show the number "12", not the actual words "Hello World!".
 
-print(len('\nHello World!'))
+print(len('Hello World!'))
