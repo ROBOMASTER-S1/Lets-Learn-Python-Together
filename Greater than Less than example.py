@@ -3,7 +3,7 @@
 # name. The second while-loop asks for the user's last name, and the third while-loop
 # asks for the user's age. In the first and second while-loop, the user's first name and
 # user's last name are compared by how many letters the user types. The 
-# 'str([first_name])' statement makes the user type in text only, not integers.
+# '<str([first_name])' statement makes the user type in text only, not integers.
 
 # Note: Python executes/runs programs starting from the top, downward. Be very
 # careful on how you place statements. Some statements cannot execute right, even if
