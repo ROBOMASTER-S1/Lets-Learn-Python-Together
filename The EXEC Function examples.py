@@ -1,5 +1,3 @@
-# Here are some projects that require quite a bit of patience and dedication. The
-
 # Sometimes if you are going to be using and reusing small bits of Python code
 # over and over again, you might want to consider using the 'exec' function.
 # The 'exec' function can be used in such examples as these examples below.
