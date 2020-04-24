@@ -549,7 +549,7 @@ b=Class_two(
     'Class_two value3'
     )
 
-c=Class_two(
+c=Class_three(
     'Class_three value1',
     'Class_three value2',
     'Class_three value3'
