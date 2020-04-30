@@ -1,11 +1,8 @@
 
-#  These super class examples are also my own tinkering
-#  from other such examples. However, super() and __init__
-#  constructors are still very new to me. So please don't ask
-#  me how to understand what I made, because I honestly don't.
-#  Well, I understand classes and functions, but the super() function
-#  is very new to me. But, I'm pretty darn sure I will figure it all out in
-#  due time...
+# These superclass examples are also my own tinkering from other such examples. However, super() and __init__
+# constructors are still very new to me. So please don't ask me how to understand what I made, because I honestly don't.
+# Well, I understand classes and functions, but the super() function is very new to me. But, I'm pretty darn sure I
+# will figure it all out in due time...
 
 class Super_class:
     def super1(self):
