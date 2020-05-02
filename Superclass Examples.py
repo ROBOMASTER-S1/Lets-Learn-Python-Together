@@ -128,3 +128,197 @@ d=Super4('value1','value2','value3','value4')
 print(a.var1,b.var2,c.var3,d.var4)
 
 '''-----------------------------------------------------------------------------'''
+
+class Student_body:
+    def __init__(
+        self,value1,
+        value2,value3,
+        value4,value5):
+            
+        self.var1=value1
+        self.var2=value2
+        self.var3=value3
+        self.var4=value4
+        self.var5=value5
+
+class First_name(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+    
+class Middle_name(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+class Last_name(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+class Student_age(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+class Student_grade(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+    
+class Students(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+a=First_name(
+    'First name1',
+    'First name2',
+    'First name3',
+    'First name4',
+    'First name5'
+    )
+b=Middle_name(
+    'Middle name1',
+    'Middle name2',
+    'Middle name3',
+    'Middle name4',
+    'Middle name5'
+    )
+c=Last_name(
+    'Last name1',
+    'Last name2',
+    'Last name3',
+    'Last name4',
+    'Last name5'
+    )
+    
+d=Student_age(22,18,17,20,19)
+e=Student_grade(12,10,12,11,9)
+
+print(e.var1)
+
+'''-----------------------------------------------------------------------------'''
+
+class Student_body:
+    def __init__(
+        self,value1,
+        value2,value3,
+        value4,value5):
+            
+        self.var1=value1
+        self.var2=value2
+        self.var3=value3
+        self.var4=value4
+        self.var5=value5
+
+class First_name(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+    
+class Middle_name(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+class Last_name(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+class Student_age(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+class Student_grade(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+    
+class Students(Student_body):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+
+list_args=[
+    First_name(
+        'First name1','First name2',
+        'First name3','First name4',
+        'First name5'),
+    Middle_name(
+        'Middle name1','Middle name2',
+        'Middle name3','Middle name4',
+        'Middle name5'),
+    Last_name(
+        'Last name1','Last name2',
+        'Last name3','Last name4',
+        'Last name5'),
+        
+    Student_age(22,18,17,20,19),
+    Student_grade(12,10,12,11,9)
+    ]
+
+print(f'Student {list_args[0].var1} {list_args[1].var1}. {list_args[2].var1}')
+print(f'Student age:{list_args[3].var1} Student grad:{list_args[4].var1}')
+
+'''-----------------------------------------------------------------------------'''
+
+class Super_dooper:
+    def __init__(
+        self,value1,
+        value2,value3,
+        value4,value5):
+        self.var1=value1
+        self.var2=value2
+        self.var3=value3
+        self.var4=value4
+        self.var5=value5
+    
+class Super1(Super_dooper):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+class Super2(Super_dooper):
+    def __init__(self,var1,var2,var3,var4,var5):
+        super().__init__(var1,var2,var3,var4,var5)
+        
+a=Super2('value1','value2','value3','value4','value5')
+
+print(a.var5)
+
+'''-----------------------------------------------------------------------------'''
+
+class A(object):
+    def __init__(self):
+        print('first')
+        
+class B(object):
+    def __init__(self):
+        print('second')
+        
+class C(A,B):
+    def __init__(self):
+        super().__init__()
+        print('third')
+        
+My_object=C()
+
+'''-----------------------------------------------------------------------------'''
+
+class Super1:
+   def first(self):
+       print('Super1')
+       
+class Super2:
+   def second(self):
+       print('Super2')
+       
+class Super3:
+   def third(self):
+       print('Super3')
+       
+class Super4:
+   def forth(self):
+       print('Super4')
+       
+class Child(Super1,Super2,Super3,Super4):
+    def allclass(self):
+        print('lets call all the classes at once.')
+        super().first()
+        super().second()
+        super().third()
+        super().forth()
+        
+Child().allclass()
+
+'''-----------------------------------------------------------------------------'''
