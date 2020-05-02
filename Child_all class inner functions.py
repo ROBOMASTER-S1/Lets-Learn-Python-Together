@@ -580,3 +580,42 @@ print(c.value3)
 print(d.value1)
 print(e.value2)
 print(f.value3)
+
+'''---------------------------------------------------------------------------------------'''
+
+class Class_one:
+    def __init__(self,value1,value2,value3):
+        self.value1=value1
+        self.value2=value2
+        self.value3=value3
+        
+    def get_return_value1(self):
+        return self
+    
+class Class_two:
+    def __init__(self,value1,value2,value3):
+        self.value1=value1
+        self.value2=value2
+        self.value3=value3
+        
+    def get_return_value2(self):
+        return self
+
+class Class_three:
+    def __init__(self,value1,value2,value3):
+        self.value1=value1
+        self.value2=value2
+        self.value3=value3
+        
+    def get_return_value3(self):
+        return self
+
+class Class_all(Class_one,Class_two,Class_three):
+    pass
+
+a=Class_one('value1','value2','value3')
+b=Class_all('value1','value2','value3')
+
+print(b.value3)
+
+'''---------------------------------------------------------------------------------------'''
