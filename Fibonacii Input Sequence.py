@@ -13,7 +13,7 @@ words=(
     )
 
 try:
-    x=int(input(words[2]))
+    x=int(input(words[2]).strip())
 
     for i in range(x):
         fib_num=num1+num2
