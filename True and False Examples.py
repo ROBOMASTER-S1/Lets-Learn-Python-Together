@@ -85,6 +85,20 @@ print(False or not False)
 print(True or not False)
 print(False or not True)
 
+print(True is not True)
+print(False is not False) 
+print(True is not False)
+print(False is not True)
+
+# Use operators to check to see if a value is True or False.
+
+print(True == True)
+print(False == False)
+print(True != False) 
+print(False != True)
+print(True >= False)
+print(True <= False)
+
 # Here is a prime example of how these conditionals work in conjunction with the
 # logical operators. In this program example, the conditionals 'if:' and 'elif:' are
 # implement along with the logical operators. The user is asked to type in a number, if
