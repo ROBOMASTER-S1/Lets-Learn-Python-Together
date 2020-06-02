@@ -1,5 +1,43 @@
 # Abstract Python Examples:
 
+# Unpack multiple values, using just one, single "=" sign.
+# Not: You must use equal variables to equal values.
+
+a,b,c=1,2,3
+
+print(a,b,c)
+
+# Add the values together.
+
+print(a+b+c)
+
+# Example 2:
+
+a,b,c,d,e,f=1,2,3,4,5,6
+
+print(a,b,c,d,e,f)
+
+# Add the values together.
+
+print(a+b+c+d+e+f)
+
+# Example 3
+
+name1,name2,name3='Bob','Rob','John'
+
+print(name1,'and',name2,'went to',name3+"'s",'house for dinner.')
+
+# You can use the 'f' format to make the above print statement
+# read like this.
+
+print(f"{name1} and {name2} went to {name3}'s house for dinner.")
+
+# Old format example of the print statement from earlier Python versions.
+
+print("{} and {} went to {}'s house for dinner.".format(name1,name2,name3))
+
+'''----------------------------------------------------------------'''
+
 x={1,2,3,4,9,6,7,8,5,9}
 y={10,11,15,13,14,12,16,17,18,19,19}
 z={20,21,22,23,27,25,26,24,28,29,22}
