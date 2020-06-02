@@ -503,3 +503,65 @@ class All(A,B,C,D):
         super().__init__()
         
 All()
+
+'''----------------------------------------------------------------'''
+
+
+# Create a game, that tells you how many quetions you got right, along with
+# your prize earnings.
+
+import os
+
+text_colour=(
+    '\x1b[31m',
+    '\x1b[32m',
+    '\x1b[33m',
+    '\x1b[34m',
+    '\x1b[35m',
+    '\x1b[36m',
+    '\x1b[37m',
+    'cls'
+    )
+
+question_prompts1=(
+    f'{text_colour[2]}How many sides does a Triangle have?\n\n{text_colour[1]}(a) {text_colour[2]}four \
+sides\n{text_colour[1]}(b) {text_colour[2]}three sides\n{text_colour[1]}(c) {text_colour[2]}two sides',
+
+    f'{text_colour[2]}How many sides does a Square have?\n\n{text_colour[1]}(a) {text_colour[2]}\
+Two sides\n{text_colour[1]}(b) {text_colour[2]}Three sides\n{text_colour[1]}(c) {text_colour[2]}Four sides',
+
+    f'{text_colour[2]}How many sides does a Pentagon have?\n\n{text_colour[1]}(a) {text_colour[2]}\
+four sides\n{text_colour[1]}(b) {text_colour[2]}five sides\n{text_colour[1]}(c) {text_colour[2]}Three sides',
+
+    f'{text_colour[2]}How many sides does a Hexagon have?\n\n{text_colour[1]}(a) {text_colour[2]}six \
+sides\n{text_colour[1]}(b) {text_colour[2]}five sides\n{text_colour[1]}(c) {text_colour[2]}two sides',
+
+    f'{text_colour[2]}How many sides does a Octagon have?\n\n{text_colour[1]}(a) {text_colour[2]}four \
+sides\n{text_colour[1]}(b) {text_colour[2]}six sides\n{text_colour[1]}(c) {text_colour[2]}eight sides',
+
+    f'{text_colour[2]}How many sides does a Dodecagon have?\n\n{text_colour[1]}(a) {text_colour[2]}eight \
+sides\n{text_colour[1]}(b) {text_colour[2]}three sides\n{text_colour[1]}(c) {text_colour[2]}twelve sides',
+
+    f'{text_colour[2]}How many sides does a Hexadecagon have?\n\n{text_colour[1]}(a) {text_colour[2]}sixteen \
+sides\n{text_colour[1]}(b) {text_colour[2]}eight sides\n{text_colour[1]}(c) {text_colour[2]}six sides'
+    )
+
+prompt=('b','c','b','a','c','c','a')
+
+score=0
+loop=0
+
+while loop<=6:
+    os.system(text_colour[7])
+    button=input((text_colour[1])+'\nKnow Your Stuff!\n\n'+(text_colour[2])+'Know Your Polygons\n\n'+\
+    question_prompts1[loop]+'\n\n'+(text_colour[0])+'READY:'+(text_colour[1])).strip()
+    if button==(prompt[loop]):
+        score+=1
+    loop+=1
+    os.system(text_colour[7])
+
+print(f'\n{text_colour[2]}Know Your Polygons\n\n{text_colour[2]}You got {score}/{len(question_prompts1)} \
+questions correct.\nCongratulations! Your total Prize Winnings: {text_colour[1]}${score*100*score:,}.00 \
+{text_colour[2]}Dollars.\n\n{text_colour[0]}READY:')
+
+input('\nEND OF PROGRAM! Press Enter to quit.')
