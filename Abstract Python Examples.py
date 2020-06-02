@@ -506,7 +506,6 @@ All()
 
 '''----------------------------------------------------------------'''
 
-
 # Create a game, that tells you how many quetions you got right, along with
 # your prize earnings.
 
