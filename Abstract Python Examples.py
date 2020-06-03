@@ -143,6 +143,8 @@ nums2={1,2,2,3,4}
 
 print(nums1 | nums2) # Union
 
+'''----------------------------------------------------------------'''
+
 my_set=['Fast','Fast','Frog','Fish','Frog','Fog','Floor']
 
 print('This unsorted list',my_set,'has duplicates in it.')
@@ -160,6 +162,16 @@ non-duplicated list.',duplicate,)
 
 print(f'\nNow you can call up a sorted, non-duplicate list item \
 like this "{duplicate[4]}"')
+
+'''----------------------------------------------------------------'''
+
+x=tuple('123456789')
+
+print(x)
+
+x=tuple(('123456789','abcdefghij'))
+
+print(x)
 
 '''----------------------------------------------------------------'''
 
@@ -337,7 +349,7 @@ print(random.random())
 
 # capture the state:
 
-state = random.getstate()
+state=random.getstate()
 
 # print another random number:
 
@@ -450,7 +462,7 @@ print(f'{x:,}') # =101 0's (ONE CENTILLION)
 
 def myfunc():
   global x
-  x = 'fantastic.'
+  x='fantastic.'
 
 myfunc()
 
