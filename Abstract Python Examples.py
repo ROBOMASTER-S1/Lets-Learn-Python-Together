@@ -38,6 +38,87 @@ print("{} and {} went to {}'s house for dinner.".format(name1,name2,name3))
 
 '''----------------------------------------------------------------'''
 
+print(type('string'))
+
+# <class 'str'>
+
+print(type(2))
+
+# <class 'int'>
+
+# View string fuctions and string methods.
+
+print(dir('string'))
+
+# View integer fuctions and integer methods.
+
+print(dir(2))
+
+# Get the id from a string.
+
+print(id('string'))
+
+# Get the id from an integer.
+
+print(id(2))
+
+'''----------------------------------------------------------------'''
+
+# These two 'print' statements below use the dunder method 'add', which is the same
+# as the 'print' statements 'print(2+3)' and 'print('a'+'b')'. The 'int' function adds only
+# integer numbers together, whereas the 'str' function concatenates/joins character
+# strings together.
+
+print(int.__add__(2,3))
+
+# Screen output:	5
+
+print(str.__add__('a','b'))
+
+# Screen output:	ab
+
+# Dunder methods assure functionality inside class functions. For example, you
+# wouldn't use a dunder '__str__' method with integer values; likewise, you wouldn't
+# use a dunder '__add__' method with character string values.
+
+# Take a close look at these two program examples below. You Notice there are
+# yellow highlighted variables. These variables indicate how these two, very same
+# program examples can be written. Both program examples do exactly the same
+# thing, even though they look a wee bit different. Type and execute/run these two
+# program examples below and see what happens.
+
+# Program example 1:
+
+class Dunder_add:
+    def __init__(self,num):
+        self.num=num
+        
+    def __add__(self,plus):
+        return self.num+plus
+
+a=Dunder_add(6)
+b=Dunder_add(8)
+c=Dunder_add(12)
+
+print(a.num+b.num+c.num)
+
+# Program example 2:
+
+class Dunder_add:
+    def __init__(self,num):
+        self.num=num
+        
+    def __add__(self,plus):
+        return self.num+plus.num
+
+a=Dunder_add(6)
+b=Dunder_add(8)
+c=Dunder_add(12)
+
+print(a+b+c.num)
+
+'''----------------------------------------------------------------'''
+
 x={1,2,3,4,9,6,7,8,5,9}
 y={10,11,15,13,14,12,16,17,18,19,19}
 z={20,21,22,23,27,25,26,24,28,29,22}
