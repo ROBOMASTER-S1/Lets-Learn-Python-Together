@@ -380,3 +380,141 @@ and Bool2 is "{Boole2.title()}".\n')
     else:
         print('Type the right vales please!')
 
+        
+# The 'not' Operator
+
+'''
+The 'not' operator simply turns true values into false values, and visa versa; false \
+values into true values. For example, true 'and' true is 'True' and false 'and' false is \
+'False'. Now here is where things get a little bit weird when implementing a 'not' \
+operator against true and false values. Here are some examples of the 'not' operator \
+and how it turns true values into false values, and false values into true values.
+'''
+# Here are some examples of how the 'not' operator works. Type and execute/run
+# each of these program examples to see how they work.
+
+Boole=True
+
+if Boole==True:
+    print(Boole)
+    
+print('George Boole says \'True\' because \'True\' and \'True\' are true.')
+
+Boole=False
+
+if Boole==False:
+    print(Boole)
+    
+print('George Boole says \'False\' because \'False\' and \'False\' are false.')
+
+# Here are two examples of how 'True' and 'False' values contradict one another,
+# which causes these two program examples below not to show any output on the
+# screen, except the 'print' statement, that says George Boole does not contradict
+# himself.
+
+Boole=True
+
+if Boole==False:
+    print(Boole)
+    
+print('George Boole does not contradict himself.')
+
+Boole=False
+
+if Boole==True:
+    print(Boole)
+    
+print('George Boole does not contradict himself.')
+
+# Remeber that if 'True' equals 'True', then the outcome will also equal 'True'.
+# However, when a 'not' operator is impemented into the mix of a 'True equals 'True'
+# comparison, that's when things get strangely confusing. However, the confusion is
+# nothing to fret about. The 'not' operator simply turns a 'True' equals 'True' into a
+# 'True' equals 'False', which acts like the program examples under the following
+# program example. All three program examples won't show any output on the 
+# screen, but the 'print' statement 'George Boole does not contradict himself.'
+
+Boole=True
+
+if Boole==True:
+    if not Boole:
+        print(Boole)
+        
+print('George Boole does not contradict himself.')
+
+Boole=True
+
+if Boole==False:
+    print(Boole)
+    
+print('George Boole does not contradict himself.')
+
+Boole=False
+
+if Boole==True:
+    print(Boole)
+    
+print('George Boole does not contradict himself.')
+
+# These two program examples below show how a 'not' operator makes a true value
+# become a false value, and how a false value becomes a true value.
+
+variable=True
+
+if not  variable:
+    print('False becomes True')
+
+else:
+    print('True Becomes False')
+
+variable=False
+
+if not  variable:
+    print('False becomes True')
+
+else:
+    print('True Becomes False')
+
+# Here are some more examples of 'True' and 'False' conditionals. Type and
+# execute/run each of these program examples below and see what happens when
+# 'True' and 'False' values become 'False' and 'True' values instead.
+
+Boole=True
+
+if Boole==True:
+     print('True')
+
+else:
+     Boole==False     
+     print('False')
+
+Boole=False
+
+if Boole==True:
+     print('True')
+
+else:
+     Boole==False
+     print('False')
+
+# Here are some more examples of the 'not' operator. Type and execute/run each of
+# these program examples below and see what happens when a 'True' value is 'not'
+# 'True' and when a 'False' value is 'not' 'False'.
+
+Boole=True
+
+if not Boole==True:
+     print('True')
+     
+else:
+     Boole==False
+     print('False')
+
+Boole=False
+
+if not Boole==True:
+     print('True')
+     
+else:
+     Boole==False
+     print('False')
