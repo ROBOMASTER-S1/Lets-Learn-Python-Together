@@ -57,8 +57,8 @@ Likewise, if something is false, then it is not true.
 
 When it comes to program development, sometimes logical operators aren't enough alone to do \
 the job. In most cases, other conditionals are needed to help the logical operators do the job. With \
-the 'if:', 'elif:', 'else', 'true', 'false', 'and', 'or' and 'not' conditionals, the logical operators can do the \
-job as they were designed for doing, which are to test values against other values and comparing \
+the 'if:', 'elif:', 'else', 'true', 'false', 'and', 'or' and 'not' conditionals, the logical operators \
+can do the job as they were designed for doing, which are to test values against other values and comparing \
 data against user input data.
 '''
 # Using simple 'print' statements, you can do simple True and False tests to help you
