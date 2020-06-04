@@ -599,12 +599,269 @@ All()
 
 '''----------------------------------------------------------------'''
 
-# Create a game, that tells you how many quetions you got right, along with
-# your prize earnings.
+# This program example has three, separate conditional while-loops, each of them
+# compares data against user input data. The first while-loop asks for the user's first
+# name. The second while-loop asks for the user's last name, and the third while-loop
+# asks for the user's age. In the first and second while-loop, the user's first name and
+# user's last name are compared by how many letters the user types. The 
+# 'str([first_name])' statement makes the user type in text only, not integers.
+
+# Note: Python executes/runs programs starting from the top, downward. Be very
+# careful on how you place statements. Some statements cannot execute right, even if
+# they work. This is simply because of the order that Python executes/runs its
+# program statements.
+
+while True:
+    first_name=input('\nWhat is your name please? ').strip()
+    
+    if first_name<str([first_name]):
+        print('\nError: text only please!')
+        
+    elif len(first_name)<3:
+        print('\nYour first name must be over 2 characters long.')
+        
+    elif len(first_name)>10:
+        print('Your first name must be under 10 characters long.')
+        
+    else:
+        break
+
+while True:
+    last_name=input(f'\nNice to meet you {first_name.title()}. \
+What is your last name please? ').strip()
+    
+    if last_name<str([last_name]):
+        print('\nError: text only please!')
+        
+    elif len(last_name)<3:
+        print('\nYour last name must be over 2 characters long.')
+        
+    elif len(last_name)>10:
+        print('\nYour last name must be under 10 characters long.')
+        
+    else:
+        break
+
+while True:
+    try:
+        age=int(input(f'\nHow old are you {first_name.title()}? ').strip())
+        break
+    
+    except ValueError:
+        print('\nError: integers only please!')
+        
+print(f'\nYour first name = {first_name.title()}:\nYour last name = \
+{last_name.title()}:\nYour age = {age}:\n')
+
+'''----------------------------------------------------------------'''
+
+# Here's a fun, simple program example, which tells you how many seconds you have
+# been on Earth for. Type and execute/run the program example below and see what
+# happens when you type your age, then press the 'Enter' key. Note: this program
+# example also uses the 'finally' statement to illustrate the use of the how the 'finally'
+# command works. The 'finally' command will always execute, no matter the outcome.
+# Also note that the 'finally' command only works with the 'try' and 'except' command
+# blocks.
+
+months=12
+weeks=52
+days=365
+
+hours_per_day=24
+minuts_per_hour=60
+seconds_per_minute=60
+
+string_tuple=(
+    months,weeks,days,
+    hours_per_day,
+    minuts_per_hour,
+    seconds_per_minute
+    )
+
+while True:
+    
+    try:        
+        age=int(input('How old are you? ').strip())
+
+        print(f'\nYou have been on Earth for {age} years.')
+        
+        print(f'\nYou have been on Earth for {age*string_tuple[0]:,} months.')
+        
+        print(f'\nYou have been on Earth for {age*string_tuple[1]:,} weeks.')
+        
+        print(f'\nYou have been on Earth for {age*string_tuple[2]:,} days.')
+
+        print(f'\nYou have been on Earth for {age*string_tuple[2]*string_tuple[3]:,} hours.')
+
+        print(f'\nYou have been on Earth for \
+{age*string_tuple[2]*string_tuple[3]*string_tuple[4]:,} minutes.')
+
+        print(f'\nYou have been on Earth for \
+{age*days*string_tuple[3]*string_tuple[4]*string_tuple[5]:,} seconds.')
+        
+        break
+    
+    except ValueError:
+        print('\nSorry! Numbers only please.\n')
+        
+    finally:
+        print('Finally will always execute no matter the outcome.')
+
+'''----------------------------------------------------------------'''
+
+# This conditional while-loop example types out the words "Python Programmer\'s
+# Glossary Bible". As long as 'length' is less (<) than 'len' starting at "0", the while-loop
+# will keep on looping until  'length' is equal to 'len'. The 'os.system('cls')' function
+# clears the screen each cycle through the while-loop, and the 'time.sleep(.05)'
+# function delays the while-loop in between cycles. This fun, little program example
+# makes the printout on the screen appear as if it were actualy typing letters.
+
+# Note: Python executes/runs programs starting from the top, downward. Be very
+# careful on how you place statements. Some statements cannot execute right, even if
+# they work. This is simply because of the order that Python executes/runs its program
+# statements.
+
+# Note: The 'import os' module and the 'import time' module must be imported first.
+
+import os
+import time
+
+letters='\n"Python Programmer\'s Glossary Bible"'
+length=0
+
+while length<=len(letters):
+    os.system('cls')
+    print(letters[:length])
+    time.sleep(.05)
+    length+=1
+
+'''----------------------------------------------------------------'''
+
+# This conditional while-loop example compares a random number against user input
+# data. If the user picks the right number by luck alone, the while-loop will break out
+# and the program ends. If the user picks the wrong number, the less (<) than or
+# greater (>) than 'random_num' variable gets conditioned and the while-loop keeps
+# on iterating until the right number is picked, via user input data.
+
+# Note: Python executes/runs programs starting from the top, downward. Be very
+# careful on how you place statements. Some statements cannot execute right, even if
+# they work. This is simply because of the order that Python executes/runs its
+# program statements.
+
+# Note: The 'import random' module must be imported first.
+
+import random
+
+random_num=random.randint(1,10)
+
+while True:
+    try:
+        pick_num=int(input('\nWhat number am I thinking of? Hint! It\'s \
+between 1 and 10: ').strip())
+        
+        if pick_num<random_num:
+            print('\nThe number I\'m thinking of is too low!')
+            
+        elif pick_num>random_num:
+            print('\nThe number I\'m thinking of is too high!')
+            
+        elif pick_num==random_num:
+            print(f'\nCongratulations! You won. "{random_num}" was the \
+number I was thinking of.')
+            break
+        
+    except ValueError:
+        print('\nYou must type integers only please!')
+        
+'''----------------------------------------------------------------'''
+
+# This very same program example as above works exactly the same way, but with
+# one major difference; the while loop will only iterate three times. If the user picks the
+# right number, the while loop breaks. If the user doesn't pick the right number after
+# three times, the 'else' statement executes and says 'Sorry! You lost.', which ends the
+# program.
+
+# Note: the 'import random' module must be imported first.
+
+import random
+
+random_num=random.randint(1,10)
+
+i=0
+
+while i<3:
+    try:
+        pick_num=int(input('\nWhat number am I thinking of? Hint! It\'s \
+between 1 and 10: ').strip())
+        
+        i+=1
+        
+        if pick_num<random_num:
+            print('\nThe number I\'m thinking of is too low!')
+            
+        elif pick_num>random_num:
+            print('\nThe number I\'m thinking of is too high!')
+            
+        elif pick_num==random_num:
+            print(f'\nCongratulations. You won! "{random_num}" was the number \
+I was thinking of.')            
+            break
+        
+    except ValueError:
+        print('\nYou must type integers only please!')
+        
+else:
+    print('\nSorry. You lost!')
+    
+'''----------------------------------------------------------------'''
+
+# Once again, this is the very same program example as above before. However, this
+# time the loop iterates in reverse instead of forward and the user is shown how many
+# guesses they have left before they win or lose.
+
+# Note: the 'import random' module must be imported first.
+
+import random
+
+random_num=random.randint(1,10)
+
+i=3
+
+while i>0:
+    try:
+        pick_num=int(input(f'\nWhat number am I thinking of? Hint! It\'s \
+between 1 and 10:\n\nYou have {i} gesses left. ').strip())
+        
+        i-=1
+        
+        if pick_num<random_num:
+            print('\nThe number I\'m thinking of is too low!')
+            
+        elif pick_num>random_num:
+            print('\nThe number I\'m thinking of is too high!')
+            
+        elif pick_num==random_num:
+            print(f'\nCongratulations. You won! "{random_num}" was the number \
+I was thinking of.')
+            break
+        
+    except ValueError:
+        print('\nYou must type integers only please!')
+        
+else:
+    print('\nSorry. You lost!')
+
+'''----------------------------------------------------------------'''
+
+# See what happens when you type and execute/run this guessing game program
+# example below. Note: you must execute/run the program from the OS output screen,
+# via double-clicking the Python program file itself.
+
+# Save the Python file as 'Know Your Stuff'
 
 import os
 
-text_colour=(
+tc=(
     '\x1b[31m',
     '\x1b[32m',
     '\x1b[33m',
@@ -616,26 +873,26 @@ text_colour=(
     )
 
 question_prompts1=(
-    f'{text_colour[2]}How many sides does a Triangle have?\n\n{text_colour[1]}(a) {text_colour[2]}four \
-sides\n{text_colour[1]}(b) {text_colour[2]}three sides\n{text_colour[1]}(c) {text_colour[2]}two sides',
-
-    f'{text_colour[2]}How many sides does a Square have?\n\n{text_colour[1]}(a) {text_colour[2]}\
-Two sides\n{text_colour[1]}(b) {text_colour[2]}Three sides\n{text_colour[1]}(c) {text_colour[2]}Four sides',
-
-    f'{text_colour[2]}How many sides does a Pentagon have?\n\n{text_colour[1]}(a) {text_colour[2]}\
-four sides\n{text_colour[1]}(b) {text_colour[2]}five sides\n{text_colour[1]}(c) {text_colour[2]}Three sides',
-
-    f'{text_colour[2]}How many sides does a Hexagon have?\n\n{text_colour[1]}(a) {text_colour[2]}six \
-sides\n{text_colour[1]}(b) {text_colour[2]}five sides\n{text_colour[1]}(c) {text_colour[2]}two sides',
-
-    f'{text_colour[2]}How many sides does a Octagon have?\n\n{text_colour[1]}(a) {text_colour[2]}four \
-sides\n{text_colour[1]}(b) {text_colour[2]}six sides\n{text_colour[1]}(c) {text_colour[2]}eight sides',
-
-    f'{text_colour[2]}How many sides does a Dodecagon have?\n\n{text_colour[1]}(a) {text_colour[2]}eight \
-sides\n{text_colour[1]}(b) {text_colour[2]}three sides\n{text_colour[1]}(c) {text_colour[2]}twelve sides',
-
-    f'{text_colour[2]}How many sides does a Hexadecagon have?\n\n{text_colour[1]}(a) {text_colour[2]}sixteen \
-sides\n{text_colour[1]}(b) {text_colour[2]}eight sides\n{text_colour[1]}(c) {text_colour[2]}six sides'
+    f'{tc[2]}How many sides does a Triangle have?\n\n{tc[1]}(a) {tc[2]}four sides\n\
+{tc[1]}(b) {tc[2]}three sides\n{tc[1]}(c) {tc[2]}two sides',
+    
+    f'{tc[2]}How many sides does a Square have?\n\n{tc[1]}(a) {tc[2]}Two sides\n\
+{tc[1]}(b) {tc[2]}Three sides\n{tc[1]}(c) {tc[2]}Four sides',
+    
+    f'{tc[2]}How many sides does a Pentagon have?\n\n{tc[1]}(a) {tc[2]}four sides\n\
+{tc[1]}(b) {tc[2]}five sides\n{tc[1]}(c) {tc[2]}Three sides',
+    
+    f'{tc[2]}How many sides does a Hexagon have?\n\n{tc[1]}(a) {tc[2]}six sides\n\
+{tc[1]}(b) {tc[2]}five sides\n{tc[1]}(c) {tc[2]}two sides',
+    
+    f'{tc[2]}How many sides does a Octagon have?\n\n{tc[1]}(a) {tc[2]}four sides\n\
+{tc[1]}(b) {tc[2]}six sides\n{tc[1]}(c) {tc[2]}eight sides',
+    
+    f'{tc[2]}How many sides does a Dodecagon have?\n\n{tc[1]}(a) {tc[2]}eight \
+sides\n{tc[1]}(b) {tc[2]}three sides\n{tc[1]}(c) {tc[2]}twelve sides',
+    
+    f'{tc[2]}How many sides does a Hexadecagon have?\n\n{tc[1]}(a) {tc[2]}sixteen \
+sides\n{tc[1]}(b) {tc[2]}eight sides\n{tc[1]}(c) {tc[2]}six sides'
     )
 
 prompt=('b','c','b','a','c','c','a')
@@ -644,16 +901,20 @@ score=0
 loop=0
 
 while loop<=6:
-    os.system(text_colour[7])
-    button=input((text_colour[1])+'\nKnow Your Stuff!\n\n'+(text_colour[2])+'Know Your Polygons\n\n'+\
-    question_prompts1[loop]+'\n\n'+(text_colour[0])+'READY:'+(text_colour[1])).strip()
+    
+    os.system(tc[7])
+    button=input((tc[1])+'\nKnow Your Stuff!\n\n'+(tc[2])+'Know Your Polygons\n\n'+\
+    question_prompts1[loop]+'\n\n'+(tc[0])+'READY:'+(tc[1])).strip()
+    
     if button==(prompt[loop]):
         score+=1
+        
     loop+=1
-    os.system(text_colour[7])
-
-print(f'\n{text_colour[2]}Know Your Polygons\n\n{text_colour[2]}You got {score}/{len(question_prompts1)} \
-questions correct.\nCongratulations! Your total Prize Winnings: {text_colour[1]}${score*100*score:,}.00 \
-{text_colour[2]}Dollars.\n\n{text_colour[0]}READY:')
+    
+    os.system(tc[7])
+    
+print(f'\n{tc[2]}Know Your Polygons\n\n{tc[2]}You got \
+{score}/{len(question_prompts1)} questions correct.\nCongratulations! Your total \
+Prize Winnings: {tc[1]}${score*100*score:,}.00 {tc[2]}Dollars.\n\n{tc[0]}READY:')
 
 input('\nEND OF PROGRAM! Press Enter to quit.')
