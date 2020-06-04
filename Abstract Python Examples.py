@@ -599,6 +599,45 @@ All()
 
 '''----------------------------------------------------------------'''
 
+# This conditional while-loop will loop as long as the value is less (<) than 3, then it will
+# stop its iteration no matter what wrong keys the user tries to type.
+
+chance=0
+
+name=input('\nWhat is your name please? ').strip()
+
+while chance<3:
+    try:
+        age=int(input(f'\nHow old are you {name}? ').strip())
+        print(f'\n{name}. You are {age} years old.')
+        break
+    
+    except ValueError:
+        print(f'\nYou have 3 chances left before the while-loop breaks out anyway!')
+        
+        chance+=1
+
+# This for-loop example does exactly the same thing, the above while-loop example
+# shows. The only difference is, the while-loop is a conditional loop, whereas the for-
+# loop is an iterate. While-loops can also be 'True:' or 'False:', depending on the
+# outcome of a program's excution run. While-loops also compare data greater than or
+# less than other data, as shown in the examples above.
+
+name=input('\nWhat is your name please? ').strip()
+
+for chance in range(3):
+    try:
+        age=int(input(f'\nHow old are you {name}? ').strip())
+        print(f'\n{name}. You are {age} years old.')
+        break
+    
+    except ValueError:
+        print('\nYou have 3 chances left before the while-loop breaks out anyway!')
+        
+        chance+=1
+
+'''----------------------------------------------------------------'''
+
 # This program example has three, separate conditional while-loops, each of them
 # compares data against user input data. The first while-loop asks for the user's first
 # name. The second while-loop asks for the user's last name, and the third while-loop
