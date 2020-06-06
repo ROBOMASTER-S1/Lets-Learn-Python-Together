@@ -1045,3 +1045,106 @@ print(f'\n{tc[2]}Know Your Polygons\n\n{tc[2]}You got \
 Prize Winnings: {tc[1]}${score*100*score:,}.00 {tc[2]}Dollars.\n\n{tc[0]}READY:')
 
 input('\nEND OF PROGRAM! Press Enter to quit.')
+
+'''----------------------------------------------------------------'''
+
+# Let's have fun and learn how to raise some errors
+# to test in Python programs.
+
+try:
+    print('Raising an Exception:')
+    raise Exception
+except Exception:
+    print('Exception:')
+finally:
+    print('finally always executes no matter the outcome.')
+
+try:
+    print('Raising a ValueError:')
+    raise ValueError
+except ValueError:
+    print('ValueError:')
+finally:
+    print('finally always executes no matter the outcome.')
+
+try:
+    print('Raising a TypeError:')
+    raise TypeError
+except TypeError:
+    print('TypeError:')
+finally:
+    print('finally always executes no matter the outcome.')
+
+try:
+    print('Raising a NameError:')
+    raise NameError
+except NameError:
+    print('NameError:')
+finally:
+    print('finally always executes no matter the outcome.')    
+    
+try:
+    print('Raising a IndexError:')
+    raise IndexError
+except IndexError:
+    print('IndexError:')
+finally:
+    print('finally always executes no matter the outcome.')
+
+try:
+    print('Raising a MemoryEorror:')
+    raise MemoryError
+except MemoryError:
+    print('MemoryError:')
+finally:
+    print('finally always executes no matter the outcome.')
+    
+
+# Raise a list of possible errors to test in Python programs.
+
+try:
+    print('Raising a list of possible errors to test:')
+    raise Exception
+    raise ValueError
+    raise TypeError
+    raise NameError
+    raise IndexError
+    raise MemoryError
+except Exception:
+    print('Exception:')
+except ValueError:
+    print('ValueError:')    
+except TypeError:
+    print('TypeError:')
+except NameError:
+    print('NameError:')
+except IndexError:
+    print('IndexError:')
+except MemoryError:
+    print('MemoryError:')
+finally:
+    print('finally always executes no matter the outcome.')
+
+'''----------------------------------------------------------------'''
+
+# Here is a basic, skeletal structure of a Try: and Except: block.
+# The 'Pass' statement ignores any empty code blocks, which are
+# not used for now. In this case, only the skeletal structure of the
+# program is clearly shown. Note:  you do not need to invoke the
+# 'finally' statement into try: and Except: blocks, but they can be
+# quite handy when you want to show any output on the screen,
+# no matter the outcome of the program's execution/run.
+
+try:
+    pass
+except Exception:
+    pass
+finally:
+    pass
+
+try:
+    num=int(input('Type a Number: ').strip())
+except ValueError:
+    print('Sorry! Numbers only please.')
+finally:
+    print('finally always executes no matter the outcome.')
