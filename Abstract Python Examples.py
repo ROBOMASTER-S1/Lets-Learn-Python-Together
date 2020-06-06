@@ -447,6 +447,94 @@ print(random.random())
 
 '''----------------------------------------------------------------'''
 
+from numpy import random
+
+x = random.randint(100)
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x = random.rand()
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x=random.randint(100, size=(5))
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x = random.randint(100, size=(3, 5))
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x = random.rand(5)
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x = random.rand(3, 5)
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x = random.choice([3, 5, 7, 9])
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x = random.choice([3, 5, 7, 9], size=(3, 5))
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(100))
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
+print(x)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+random.shuffle(arr)
+print(arr)
+
+'''----------------------------------------------------------------'''
+
+from numpy import random
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+print(random.permutation(arr))
+
+'''----------------------------------------------------------------'''
+
 import os,math,random
 from time import sleep
 
@@ -458,8 +546,124 @@ while True:
     elif random_num is not 10:
         print('is not equal to 10. The loop repeats')        
         sleep(1)
+
+'''----------------------------------------------------------------'''
+
+# This conditional while-loop example compares a random number against user input
+# data. If the user picks the right number by luck alone, the while-loop will break out
+# and the program ends. If the user picks the wrong number, the less (<) than or
+# greater (>) than 'random_num' variable gets conditioned and the while-loop keeps
+# on iterating until the right number is picked, via user input data.
+
+# Note: Python executes/runs programs starting from the top, downward. Be very
+# careful on how you place statements. Some statements cannot execute right, even if
+# they work. This is simply because of the order that Python executes/runs its
+# program statements.
+
+# Note: The 'import random' module must be imported first.
+
+import random
+
+random_num=random.randint(1,10)
+
+while True:
+    try:
+        pick_num=int(input('\nWhat number am I thinking of? Hint! It\'s \
+between 1 and 10: ').strip())
         
-'''----------------------------------------------------------------''' 
+        if pick_num<random_num:
+            print('\nThe number I\'m thinking of is too low!')
+            
+        elif pick_num>random_num:
+            print('\nThe number I\'m thinking of is too high!')
+            
+        elif pick_num==random_num:
+            print(f'\nCongratulations! You won. "{random_num}" was the \
+number I was thinking of.')
+            break
+        
+    except ValueError:
+        print('\nYou must type integers only please!')
+
+'''----------------------------------------------------------------'''
+
+# This very same program example as above works exactly the same way, but with
+# one major difference; the while loop will only iterate three times. If the user picks the
+# right number, the while loop breaks. If the user doesn't pick the right number after
+# three times, the 'else' statement executes and says 'Sorry! You lost.', which ends the
+# program.
+
+# Note: the 'import random' module must be imported first.
+
+import random
+
+random_num=random.randint(1,10)
+
+i=0
+
+while i<3:
+    try:
+        pick_num=int(input('\nWhat number am I thinking of? Hint! It\'s \
+between 1 and 10: ').strip())
+        
+        i+=1
+        
+        if pick_num<random_num:
+            print('\nThe number I\'m thinking of is too low!')
+            
+        elif pick_num>random_num:
+            print('\nThe number I\'m thinking of is too high!')
+            
+        elif pick_num==random_num:
+            print(f'\nCongratulations. You won! "{random_num}" was the number \
+I was thinking of.')            
+            break
+        
+    except ValueError:
+        print('\nYou must type integers only please!')
+        
+else:
+    print('\nSorry. You lost!')
+
+'''----------------------------------------------------------------'''
+
+# Once again, this is the very same program example as above before. However, this
+# time the loop iterates in reverse instead of forward and the user is shown how many
+# guesses they have left before they win or lose.
+
+# Note: the 'import random' module must be imported first.
+
+import random
+
+random_num=random.randint(1,10)
+
+i=3
+
+while i>0:
+    try:
+        pick_num=int(input(f'\nWhat number am I thinking of? Hint! It\'s \
+between 1 and 10:\n\nYou have {i} gesses left. ').strip())
+        
+        i-=1
+        
+        if pick_num<random_num:
+            print('\nThe number I\'m thinking of is too low!')
+            
+        elif pick_num>random_num:
+            print('\nThe number I\'m thinking of is too high!')
+            
+        elif pick_num==random_num:
+            print(f'\nCongratulations. You won! "{random_num}" was the number \
+I was thinking of.')
+            break
+        
+    except ValueError:
+        print('\nYou must type integers only please!')
+        
+else:
+    print('\nSorry. You lost!')
+    
+'''----------------------------------------------------------------'''
 
 x=10**1
 print(f'{x:,}') # =10 (TEN)
@@ -773,122 +977,6 @@ while length<=len(letters):
     print(letters[:length])
     time.sleep(.05)
     length+=1
-
-'''----------------------------------------------------------------'''
-
-# This conditional while-loop example compares a random number against user input
-# data. If the user picks the right number by luck alone, the while-loop will break out
-# and the program ends. If the user picks the wrong number, the less (<) than or
-# greater (>) than 'random_num' variable gets conditioned and the while-loop keeps
-# on iterating until the right number is picked, via user input data.
-
-# Note: Python executes/runs programs starting from the top, downward. Be very
-# careful on how you place statements. Some statements cannot execute right, even if
-# they work. This is simply because of the order that Python executes/runs its
-# program statements.
-
-# Note: The 'import random' module must be imported first.
-
-import random
-
-random_num=random.randint(1,10)
-
-while True:
-    try:
-        pick_num=int(input('\nWhat number am I thinking of? Hint! It\'s \
-between 1 and 10: ').strip())
-        
-        if pick_num<random_num:
-            print('\nThe number I\'m thinking of is too low!')
-            
-        elif pick_num>random_num:
-            print('\nThe number I\'m thinking of is too high!')
-            
-        elif pick_num==random_num:
-            print(f'\nCongratulations! You won. "{random_num}" was the \
-number I was thinking of.')
-            break
-        
-    except ValueError:
-        print('\nYou must type integers only please!')
-        
-'''----------------------------------------------------------------'''
-
-# This very same program example as above works exactly the same way, but with
-# one major difference; the while loop will only iterate three times. If the user picks the
-# right number, the while loop breaks. If the user doesn't pick the right number after
-# three times, the 'else' statement executes and says 'Sorry! You lost.', which ends the
-# program.
-
-# Note: the 'import random' module must be imported first.
-
-import random
-
-random_num=random.randint(1,10)
-
-i=0
-
-while i<3:
-    try:
-        pick_num=int(input('\nWhat number am I thinking of? Hint! It\'s \
-between 1 and 10: ').strip())
-        
-        i+=1
-        
-        if pick_num<random_num:
-            print('\nThe number I\'m thinking of is too low!')
-            
-        elif pick_num>random_num:
-            print('\nThe number I\'m thinking of is too high!')
-            
-        elif pick_num==random_num:
-            print(f'\nCongratulations. You won! "{random_num}" was the number \
-I was thinking of.')            
-            break
-        
-    except ValueError:
-        print('\nYou must type integers only please!')
-        
-else:
-    print('\nSorry. You lost!')
-    
-'''----------------------------------------------------------------'''
-
-# Once again, this is the very same program example as above before. However, this
-# time the loop iterates in reverse instead of forward and the user is shown how many
-# guesses they have left before they win or lose.
-
-# Note: the 'import random' module must be imported first.
-
-import random
-
-random_num=random.randint(1,10)
-
-i=3
-
-while i>0:
-    try:
-        pick_num=int(input(f'\nWhat number am I thinking of? Hint! It\'s \
-between 1 and 10:\n\nYou have {i} gesses left. ').strip())
-        
-        i-=1
-        
-        if pick_num<random_num:
-            print('\nThe number I\'m thinking of is too low!')
-            
-        elif pick_num>random_num:
-            print('\nThe number I\'m thinking of is too high!')
-            
-        elif pick_num==random_num:
-            print(f'\nCongratulations. You won! "{random_num}" was the number \
-I was thinking of.')
-            break
-        
-    except ValueError:
-        print('\nYou must type integers only please!')
-        
-else:
-    print('\nSorry. You lost!')
 
 '''----------------------------------------------------------------'''
 
