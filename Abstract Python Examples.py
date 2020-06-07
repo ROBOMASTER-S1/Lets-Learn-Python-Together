@@ -354,9 +354,9 @@ import random
 
 print(random.randint(1,9))
 
-print(random.randrange(1, 9))
+print(random.randrange(1,9))
 
-print(random.randrange(3, 9,2))
+print(random.randrange(3,9,2))
 
 '''----------------------------------------------------------------'''
 
@@ -364,9 +364,9 @@ import random
 
 print(random.random())
 
-print(random.uniform(20, 60))
+print(random.uniform(20,60))
 
-print(random.triangular(20, 60, 30))
+print(random.triangular(20,60,30))
 
 '''----------------------------------------------------------------'''
 
@@ -398,7 +398,7 @@ random_list=[
     'Random Less','Random Most'
     ]
 
-print(random.choices(random_list, weights=[5, 10, 25,50],k=8))
+print(random.choices(random_list,weights=[5,10,25,50],k=8))
 
 '''----------------------------------------------------------------'''
 
@@ -463,56 +463,56 @@ print(x)
 
 from numpy import random
 
-x=random.randint(100, size=(5))
+x=random.randint(100,size=(5))
 print(x)
 
 '''----------------------------------------------------------------'''
 
 from numpy import random
 
-x = random.randint(100, size=(3, 5))
+x=random.randint(100,size=(3,5))
 print(x)
 
 '''----------------------------------------------------------------'''
 
 from numpy import random
 
-x = random.rand(5)
+x=random.rand(5)
 print(x)
 
 '''----------------------------------------------------------------'''
 
 from numpy import random
 
-x = random.rand(3, 5)
+x=random.rand(3,5)
 print(x)
 
 '''----------------------------------------------------------------'''
 
 from numpy import random
 
-x = random.choice([3, 5, 7, 9])
+x=random.choice([3,5,7,9])
 print(x)
 
 '''----------------------------------------------------------------'''
 
 from numpy import random
 
-x = random.choice([3, 5, 7, 9], size=(3, 5))
+x=random.choice([3,5,7,9], size=(3,5))
 print(x)
 
 '''----------------------------------------------------------------'''
 
 from numpy import random
 
-x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(100))
+x=random.choice([3,5,7,9],p=[0.1,0.3,0.6,0.0],size=(100))
 print(x)
 
 '''----------------------------------------------------------------'''
 
 from numpy import random
 
-x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
+x=random.choice([3,5,7,9],p=[0.1,0.3,0.6,0.0],size=(3, 5))
 print(x)
 
 '''----------------------------------------------------------------'''
@@ -520,7 +520,7 @@ print(x)
 from numpy import random
 import numpy as np
 
-arr = np.array([1, 2, 3, 4, 5])
+arr=np.array([1,2,3,4,5])
 
 random.shuffle(arr)
 print(arr)
@@ -530,7 +530,7 @@ print(arr)
 from numpy import random
 import numpy as np
 
-arr = np.array([1, 2, 3, 4, 5])
+arr=np.array([1,2,3,4,5])
 print(random.permutation(arr))
 
 '''----------------------------------------------------------------'''
