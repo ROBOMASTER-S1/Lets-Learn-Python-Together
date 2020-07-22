@@ -745,6 +745,22 @@ print(f'{x:,}') # =303 0's (ONE CENTILLION)
 
 '''----------------------------------------------------------------'''
 
+import math
+
+print(min(3,6,9))
+
+print(max(3,6,9))
+
+print(pow(2,3))
+
+print(math.sqrt(9))
+
+print(math.floor(45.17))
+
+print(math.ceil(45.17))
+
+'''----------------------------------------------------------------'''
+
 def myfunc():
   global x
   x='fantastic.'
