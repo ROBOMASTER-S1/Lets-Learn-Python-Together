@@ -753,6 +753,8 @@ print(max(3,6,9))
 
 print(pow(2,3))
 
+print(abs(-10))
+
 print(math.sqrt(9))
 
 print(math.floor(45.17))
