@@ -452,3 +452,179 @@ dict_key.update({
     })
 
 print(dict_key.get('key:0','Value not found.'))
+
+'''---------------------------------------------------------'''
+
+# key example 1:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+print(key_example[1])
+print(key_example[2])
+print(key_example[3])
+print(key_example[4])
+print(key_example[5])
+print(key_example[6])
+print(key_example[7])
+print(key_example[8])
+
+
+# key example 2:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+print(key_example[1],end=' ')
+print(key_example[2],end=' ')
+print(key_example[3],end=' ')
+print(key_example[4],end=' ')
+print(key_example[5],end=' ')
+print(key_example[6],end=' ')
+print(key_example[7],end=' ')
+print(key_example[8],end=' ')
+
+
+# Get key example 1:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+print(key_example.get(1))
+print(key_example.get(2))
+print(key_example.get(3))
+print(key_example.get(4))
+print(key_example.get(5))
+print(key_example.get(6))
+print(key_example.get(7))
+print(key_example.get(8))
+
+print(key_example.get(9))
+
+print(key_example.get(9,'Key Not Found!'))
+
+
+# Get key example 2:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+print(key_example.get(1),end=' ')
+print(key_example.get(2),end=' ')
+print(key_example.get(3),end=' ')
+print(key_example.get(4),end=' ')
+print(key_example.get(5),end=' ')
+print(key_example.get(6),end=' ')
+print(key_example.get(7),end=' ')
+print(key_example.get(8),end=' ')
+
+print(key_example.get(9),end=' ')
+
+print(key_example.get(9,'Key Not Found!'),end=' ')
+
+
+# For-loop key example 1:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+for i in range(1,9):
+    print(key_example[i])
+
+
+# For-loop key example 2:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+for i in range(1,9):
+    print(key_example[i],end=' ')
+
+
+# For-loop get key example 1:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+for i in range(1,11):
+    print(key_example.get(i,'Key Not Found!'))
+    
+
+# For-loop get key example 2:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+for i in range(1,11):
+    print(key_example.get(i,'Key Not Found!'),end=' ')
+    
+
+# For-loop get key example 3:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+for i in range(1,11):
+    print(key_example.get(i,'Key '+str(i)+' Key Not Found!'),end=' ')
+
+
+# For-loop get key example 4:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+for i in range(1,11):
+    print(key_example.get(i,'Key {} Key Not Found!'.format(i)),end=' ')
+
+
+# For-loop get key example 5:
+
+key_example={
+    1:'Key example 1',2:'Key example 2',
+    3:'Key example 3',4:'Key example 4',
+    5:'Key example 5',6:'Key example 6',
+    7:'Key example 7',8:'Key example 8'
+    }
+
+for i in range(1,11):
+    print(key_example.get(i,f'Key {i} Key Not Found!'),end=' ')
