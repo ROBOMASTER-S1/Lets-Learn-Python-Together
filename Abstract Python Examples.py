@@ -38,6 +38,34 @@ print("{} and {} went to {}'s house for dinner.".format(name1,name2,name3))
 
 '''----------------------------------------------------------------'''
 
+# Unpacking multi-list example:
+
+list_1,list_2,list_3=[
+    [0,1,2,3,4,5,6,7,8,9],
+    ['a','b','c','d','e','f','g','h','i','j','k','l','m',
+     'n','o','p','q','r','s','t','u','v','w','x','y','z'],
+    ['"Python',"Programmer's",'Glossary','Bible"']
+    ]
+
+print(list_1[9])
+print(list_2[0])
+print(list_3[0],list_3[1],list_3[2],list_3[3])
+
+
+# Unpacking multi-list for-loop example:
+
+list_1,list_2,list_3=[
+    [0,1,2,3,4,5,6,7,8,9],
+    ['a','b','c','d','e','f','g','h','i','j','k','l','m',
+     'n','o','p','q','r','s','t','u','v','w','x','y','z'],
+    ['"Python',"Programmer's",'Glossary','Bible"']
+    ]
+
+for i in list_1,list_2,list_3:
+    print(i[0],i[1],i[2],i[3])
+    
+'''----------------------------------------------------------------'''
+
 print(type('string'))
 
 # <class 'str'>
