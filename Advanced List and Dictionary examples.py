@@ -628,3 +628,38 @@ key_example={
 
 for i in range(1,11):
     print(key_example.get(i,f'Key {i} Key Not Found!'),end=' ')
+    
+'''---------------------------------------------------------'''
+
+# Unpack multi-dictionary key example:
+
+key_nums,key_letters,key_words=(
+
+{1:1,2:2,3:3,4:4,5:5,6:6,7:7,8:8,9:9},
+
+{'a':'a','b':'b','c':'c','d':'d','e':'e',
+ 'f':'f','g':'g','h':'h','i':'i','j':'j','k':'k',
+ 'l':'l','m':'m','n':'n','o':'o','p':'p',
+ 'q':'q','r':'r','s':'s','t':'t','u':'u',
+ 'v':'v','w':'w','x':'x','y':'y','z':'z'},
+
+{'P1':'"Python','P2':"Programmer's",
+ 'G':'Glossary','B':'Bible"'}
+)
+
+print(key_nums[5])
+
+print(key_nums.get(5)) # Add optional custom keyword/keywords.
+
+print(key_nums.get(5,'Not Found!'))
+
+print(key_letters.get('a')) # Add optional custom keyword/keywords. 
+
+print(key_letters.get('a','Not Found!'))
+
+print(
+    key_words.get('P1','Not Found!'),
+    key_words.get('P2','Not Found!'),
+    key_words.get('G','Not Found!'),
+    key_words.get('B','Not Found!')
+    )
