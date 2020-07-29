@@ -492,6 +492,7 @@ print(key_example[6],end=' ')
 print(key_example[7],end=' ')
 print(key_example[8],end=' ')
 
+'''---------------------------------------------------------'''
 
 # Get key example 1:
 
@@ -515,6 +516,7 @@ print(key_example.get(9))
 
 print(key_example.get(9,'Key Not Found!'))
 
+'''---------------------------------------------------------'''
 
 # Get key example 2:
 
@@ -538,6 +540,7 @@ print(key_example.get(9),end=' ')
 
 print(key_example.get(9,'Key Not Found!'),end=' ')
 
+'''---------------------------------------------------------'''
 
 # For-loop key example 1:
 
@@ -551,6 +554,7 @@ key_example={
 for i in range(1,9):
     print(key_example[i])
 
+'''---------------------------------------------------------'''
 
 # For-loop key example 2:
 
@@ -564,6 +568,7 @@ key_example={
 for i in range(1,9):
     print(key_example[i],end=' ')
 
+'''---------------------------------------------------------'''
 
 # For-loop get key example 1:
 
@@ -577,6 +582,7 @@ key_example={
 for i in range(1,11):
     print(key_example.get(i,'Key Not Found!'))
     
+'''---------------------------------------------------------'''
 
 # For-loop get key example 2:
 
@@ -590,6 +596,7 @@ key_example={
 for i in range(1,11):
     print(key_example.get(i,'Key Not Found!'),end=' ')
     
+'''---------------------------------------------------------'''
 
 # For-loop get key example 3:
 
@@ -603,6 +610,7 @@ key_example={
 for i in range(1,11):
     print(key_example.get(i,'Key '+str(i)+' Key Not Found!'),end=' ')
 
+'''---------------------------------------------------------'''
 
 # For-loop get key example 4:
 
@@ -615,7 +623,8 @@ key_example={
 
 for i in range(1,11):
     print(key_example.get(i,'Key {} Key Not Found!'.format(i)),end=' ')
-
+    
+'''---------------------------------------------------------'''
 
 # For-loop get key example 5:
 
