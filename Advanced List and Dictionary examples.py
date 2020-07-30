@@ -662,9 +662,18 @@ print(key_nums.get(5)) # Add optional custom keyword/keywords.
 
 print(key_nums.get(5,'Not Found!'))
 
+print(key_letters['a'])
+
 print(key_letters.get('a')) # Add optional custom keyword/keywords. 
 
 print(key_letters.get('a','Not Found!'))
+
+print(
+    key_words['P1'],
+    key_words['P2'],
+    key_words['G'],
+    key_words['B']
+    )
 
 print(
     key_words.get('P1','Not Found!'),
