@@ -681,3 +681,24 @@ print(
     key_words.get('G','Not Found!'),
     key_words.get('B','Not Found!')
     )
+
+'''---------------------------------------------------------'''
+
+# Unpack multi-dictionary key for-loop example:
+
+key_nums,key_letters,key_words=(
+
+{0:0,1:1,2:2,3:3,4:4,5:5,6:6,7:7,8:8,9:9},
+
+{'a':'a','b':'b','c':'c','d':'d','e':'e',
+ 'f':'f','g':'g','h':'h','i':'i','j':'j','k':'k',
+ 'l':'l','m':'m','n':'n','o':'o','p':'p',
+ 'q':'q','r':'r','s':'s','t':'t','u':'u',
+ 'v':'v','w':'w','x':'x','y':'y','z':'z'},
+
+{'P1':'"Python','P2':"Programmer's",
+ 'G':'Glossary','B':'Bible"'}
+)
+
+for i in key_nums,key_letters,key_words:
+    print(i)
