@@ -24,6 +24,8 @@ the capital letter 'B' = '66', and the ASCII code value for the lowercase \
 keyboard has an ASCII code value to it. Below are some basic examples \
 how to use ASCII code characters in your programs.
 '''
+'''----------------------------------------------------------------'''
+
 # To get the ASCII code value of any letter or number key, simply type and execute/run
 # the program examples below and see what happens. Try using different letters and
 # numbers to see their ASCII code values.
@@ -45,6 +47,8 @@ print('ASCII code',ord('a'),'is the lowercase letter',chr(97))
 
 print('ASCII code',ord('B'),'is the uppercase letter',chr(66))
 print('ASCII code',ord('b'),'is the lowercase letter',chr(98))
+
+'''----------------------------------------------------------------'''
 
 # These simple dictionary program examples below illustrates the entire ASCII code
 # alphabet character sets: uppercase and lowercase character sets. Type and
@@ -95,6 +99,8 @@ print("Uppercase 'B' = ASCII code value",
 
 print("Lowercase 'b' = ASCII code value",
       (ascii_lowercase_chars['b']))
+
+'''----------------------------------------------------------------'''
 
 # These simple dictionary program examples below illustrates the ASCII code number
 # characters and the ASCII code math operators. Type and execute/run the program
