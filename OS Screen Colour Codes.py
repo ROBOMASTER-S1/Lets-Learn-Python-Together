@@ -1,4 +1,3 @@
-
 '''Save the Python file as 'OS screen colours'''
 
 # There are also OS screen colours, which also colours text. However, the OS screen
@@ -23,6 +22,8 @@ print(f'{text_colours[1]}The text is green')
 print(f'{text_colours[2]}The text is Yellow')
 
 input(f'\n{text_colours[3]}End of Progream example 1. Press Enter.')
+
+'''----------------------------------------------------------------'''
 
 # There are also OS screen colours, which also colours text. However, the OS screen
 # colours are not as flexible as text colours are. For example, If you try to make one
