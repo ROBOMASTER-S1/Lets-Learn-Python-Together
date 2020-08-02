@@ -17,6 +17,7 @@ week, day and date. See Python clock function prefix descriptions below.
 '%U'	Weeks per year prefix
 '%j'	Days per year prefix
 '''
+'''----------------------------------------------------------------'''
 
 # Let's create a simple Python clock by invoking the Python clock function prefixes.
 # First, however, we also need to import two modules; 'time' and 'datetime'. Type and
