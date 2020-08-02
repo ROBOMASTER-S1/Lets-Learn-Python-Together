@@ -17,6 +17,8 @@ class Science:
 class Child_all(Math,Reading,Science):
     pass
 
+'''----------------------------------------------------------------'''
+
 # Try these different combination examples.
 
 print(Math.nums(9,2,2))
@@ -91,6 +93,8 @@ class Child_all(
     Multiplication,Division):
     pass
 
+'''----------------------------------------------------------------'''
+
 # Try these different combination examples.
 
 print(Addition.nums1(1,2,3))
@@ -113,6 +117,8 @@ print(Child_all.nums3(1,2,3))
 
 print(Child_all.nums4(1,2,3))
 
+'''----------------------------------------------------------------'''
+
 # Create some strings to shorten your code.
 
 a=Addition.nums1(1,2,3)
@@ -124,6 +130,8 @@ c=Multiplication.nums3(1,2,3)
 d=Division.nums4(1,2,3)
 
 print(a+b+c+d*3)
+
+'''----------------------------------------------------------------'''
 
 # Create some strings to shorten your code.
 
@@ -335,6 +343,8 @@ Inherit_all.words6()
 Inherit_all.words7()
 Inherit_all.words8()
 Inherit_all.words9()
+
+'''----------------------------------------------------------------'''
 
 # Now, let's create a 'tuple' for our class inheritance loop.
 
