@@ -71,6 +71,8 @@ print('\nHELLO WORLD!'.lower())
 
 print('\nHello World!'[::-1])
 
+'''----------------------------------------------------------------'''
+
 # Try these 'print' statement value in reverse program examples, while using other
 # combined functions.
 
@@ -129,6 +131,8 @@ print('HELLO WORLD!'[0:-1:2])
 
 # Screen output:	HLOWRD
 
+'''----------------------------------------------------------------'''
+
 # In this example, the start and end slice emitter values are positive. Notice how the
 # screen output shows 'HE'.
 
@@ -137,6 +141,8 @@ print('HELLO WORLD!'[0:-1:2])
 print('HELLO WORLD! '[0:2])
 
 # Screen output:	HE
+
+'''----------------------------------------------------------------'''
 
 # In this example, the start and end slice emitter values are negative. Notice how the
 # screen output shows 'D!'.
@@ -150,6 +156,8 @@ print('HELLO WORLD! '[-3:-1])
 # Make this 'print' statement print 'Hello World!' 3 times.
 
 print('Hello World! '*3)
+
+'''----------------------------------------------------------------'''
 
 # Make this 'print' statement print 'Hello World!' go in the top, middle of the screen.
 # Note: use an emty space in between the single quotation marks (' '*45)
