@@ -415,3 +415,5 @@ button_1=Button(button,text='Click Me!',command=call_the_def_function)
 button_1.pack(side=LEFT)
 
 button.mainloop()
+
+# More Tkinter examples still to come, as I learn more and more, each and every day.
