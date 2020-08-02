@@ -11,6 +11,8 @@ can also manipulate data by incrementing it or decrementing it.
 
 for i in range(5):
     print('\nHello World!')
+    
+'''----------------------------------------------------------------'''
 
 # Here is a manual, redundant example of this tuple string code without using a for-
 # loop:
@@ -32,6 +34,8 @@ print(f'\nMy name is {list_string_name[0]} and I\'m a Super Hero.')
 print(f'\nMy name is {list_string_name[1]} and I\'m a Super Hero.')
 
 print(f'\nMy name is {list_string_name[2]} and I\'m a Super Hero.')
+
+'''----------------------------------------------------------------'''
 
 # Here is a non manual example of this very same code, using a for-loop: The for-loop
 # also inciments the string's data values, which makes the code more efficient, without
@@ -55,6 +59,8 @@ list_string_name.append('Halk')
 
 for i in range(4):
     print(f'\nMy name is {list_string_name[i]} and I\'m a Super Hero.')
+    
+'''----------------------------------------------------------------'''
 
 # This for-loop example loops by using the string's variable, instead of using the range
 # values.
@@ -65,12 +71,16 @@ list_string_name.append('Halk')
 
 for i in list_string_name:
         print(f'\nMy name is {i} and I\'m a Super Hero.')
+        
+'''----------------------------------------------------------------'''
 
 # How to make a for-loop count, starting from 0 to 9 with a 'print' statement using the
 # (f') format along with the words 'Count Loop!', with # a loop range # equal to 10.
 
 for i in range(10):
     print(f'\nCount Loop! "{i}" ')
+    
+'''----------------------------------------------------------------'''
 
 # Here is a fun list looping program example with the for-loop. The animal_list variable
 # gets incremented by (i) each cycle through the for-loop. The animal_list variable will
@@ -81,6 +91,8 @@ animal_list=['dog','cat','bird','duck','chicken']
 
 for i in animal_list:
     print(f'\nI would love to own a {i}. I just love {i}s so much!')
+    
+'''----------------------------------------------------------------'''
 
 # In this example the for-loop will cycle through the nums list, containing real integer
 # values. When it encounters the 'if i==5:' statement, the 'print' statement (f'{i}: I found
@@ -95,6 +107,8 @@ for i in nums:
         print(f'\n{i}: I found number "{i}" ')
         break
     print(f'\n{i}')
+    
+'''----------------------------------------------------------------'''
 
 # In this example the for-loop will cycle through the nums list, containing real integer
 # values. When it encounters the 'if i==5:' statement, the 'print' statement (f'\n{i}: I
@@ -109,6 +123,8 @@ for i in nums:
         print(f'\n{i}: I found number "{i}" ')
         continue
     print(f'\n{i}')
+    
+'''----------------------------------------------------------------'''
 
 # In this example the for-loop will cycle through the dictionary_list key value's values.
 # The key value "Animals" points to four values ['Dog','Cat','Bird','Fish]. When the first
@@ -130,6 +146,8 @@ for values in range(4):
     
 for values in range(4):
     print(dictionary_list['Insects'][values])
+    
+'''----------------------------------------------------------------'''
 
 # In this example the for-loop will cycle through each of the dictionary_list key value's
 # only. The 'print' statement 'print(key,value[0])' only prints out the first item of every
@@ -157,6 +175,8 @@ dictionary_list=(
 
 for key,value in dictionary_list.items():
     print(key,value[0])
+    
+'''----------------------------------------------------------------'''
 
 # Take a very close look at the program example below. It's like a for-loop but it's a
 # manual-loop. You decide how long this manual-loop will manually be. Take a close
@@ -175,6 +195,8 @@ print(next(manual_loop),end=' ')
 print(next(manual_loop),end=' ')
 print(next(manual_loop),end=' ')
 print(next(manual_loop))
+
+'''----------------------------------------------------------------'''
 
 # For-loops can have other for-loops nested inside them, called a 'Nest'. The main,
 # outer for-loop repeats one whole cycle through, while the nested, inner for-loop
