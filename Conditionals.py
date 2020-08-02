@@ -19,7 +19,6 @@ print(4>=5) False: 4 is not greater than or equal to 5
 print(4==5) False: 4 does not equal 5
 print(4!=5) True: 4 does not equal 5
 '''
-
 '''-----------------------------------------------------------------------------'''
 
 # Type and execute/run this simple 'print' statement program example below, using
@@ -66,7 +65,6 @@ the 'if:', 'elif:', 'else', 'true', 'false', 'and', 'or' and 'not' conditionals,
 can do the job as they were designed for doing, which are to test values against other values and comparing \
 data against user input data.
 '''
-
 '''-----------------------------------------------------------------------------'''
 
 # Using simple 'print' statements, you can do simple True and False tests to help you
