@@ -45,6 +45,8 @@ much more cleaner and nicer looking with actual line-breaks in between sentences
 Note: two '\n\n' or more '\n\n\n' line-break implementers can be implemented at \
 once within a single 'print' statement.
 '''
+'''----------------------------------------------------------------'''
+
 # Here are some 'print' statement examlples of the '\n' line-break implementer.
 
 print('\nHello World!')
