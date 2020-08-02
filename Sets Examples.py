@@ -21,6 +21,8 @@ Traceback (most recent call last):
 TypeError: 'set' object is not subscriptable
 '''
 
+'''----------------------------------------------------------------'''
+
 # Let's convert a set into a tuple, complete with indexing.
 
 set_demo={'Tom','Bob','John','Ron','Tom'}
@@ -34,6 +36,8 @@ print(convert[1])
 # To solve this problem, we need to use the 'sort()' function or the 'sorted() function.
 # Also note that tuples cannot be changed or sorted, but lists can be changed and sorted.
 
+'''----------------------------------------------------------------'''
+
 # Let's convert a set into a sorted list, complete with indexing. The 'sorted()' function only
 # affects the output of the list, not the actual list itself, whereas the 'sort()' function changes
 # the actual list, such as in our next example shows.
@@ -46,6 +50,8 @@ sorted_index=sorted(convert)
 
 print(sorted_index)
 
+'''----------------------------------------------------------------'''
+
 # Here is almost the very same set_demo program example as illustrated above but with one
 # exception, the actual list gets sorted, which in most cases, that's not always what you want.
 # Therefore, the 'sorted()' function is used to prevent actual list modifications.
@@ -57,6 +63,8 @@ convert=list(set_demo)
 convert.sort()
 
 print(convert)
+
+'''----------------------------------------------------------------'''
 
 # The set_demo program example below does everything the above program example illustrated.
 # The only difference, is that there are two sets, which we are going to extend both sets into one,
@@ -75,6 +83,8 @@ convert1.extend(convert2)
 
 sorted_index=sorted(convert1)
 
+'''----------------------------------------------------------------'''
+
 # Check the values first to make sure they are correctly sorted and such.
 
 print(sorted_index)
@@ -82,6 +92,8 @@ print(sorted_index)
 # Let's create a sentence out of our sorted_index argument like this.
 
 print(sorted_index[0],'is a great name.')
+
+'''----------------------------------------------------------------'''
 
 # Let's create a for-loop to loop through our sorted_index variable, and creat a sentence within our
 # for-loop.
