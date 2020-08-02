@@ -7,6 +7,8 @@ print(num(10))
 num=lambda x:x**3
 print(num(10))
 
+'''----------------------------------------------------------------'''
+
 def num(x):
     return lambda x:x**3
 c=num(3)
@@ -42,6 +44,8 @@ print(x(5,6))
 x=lambda a,b,c:a+b+c
 print(x(5,6,2))
 
+'''----------------------------------------------------------------'''
+
 def myfunc(n):
   return lambda a:a*n
 
@@ -49,12 +53,16 @@ mydoubler=myfunc(2)
 
 print(mydoubler(11))
 
+'''----------------------------------------------------------------'''
+
 def myfunc(n):
   return lambda a:a*n
 
 mytripler=myfunc(3)
 
 print(mytripler(11))
+
+'''----------------------------------------------------------------'''
 
 def myfunc(n):
   return lambda a:a*n
