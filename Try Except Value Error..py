@@ -23,6 +23,8 @@ the \'try:\' and \'except:\'block executes/runs.')
         
 print('This is the end of the entire conditional while-loop example:')
 
+'''----------------------------------------------------------------'''
+
 # This is a basic layout of the 'try and except', 'finally' program example. The program
 # does work fine, but it does nothing. The program example below simply shows the
 # basic layout of the 'try and except', 'finally' statements. The 'finally' statement is
@@ -40,6 +42,8 @@ else:
      pass
 finally:
      pass
+    
+'''----------------------------------------------------------------'''
 
 # Here is the very same 'try and except' program example below. Type and
 # execute/run the program and see what happens.
@@ -56,6 +60,8 @@ finally:
 # The 'finally' statement is executed no matter the outcome the 'try and except'
 # handler block does
 
+'''----------------------------------------------------------------'''
+
 # These two 'input' statements in this program example asks the user their name and
 # their age, using the 'try:' and 'except:' error handlers.
 
@@ -68,6 +74,8 @@ try:
 except ValueError:
     print('\nThe \'try:\' and \'except ValueError:\' block executes/runs whenever a letter \
 key is pressed instead of a number key.')
+    
+'''----------------------------------------------------------------'''
 
 # Now, put this very same program code above into a conditional while-loop and see
 # what happens when the user tries to type letters, instead of typing numbers for their
