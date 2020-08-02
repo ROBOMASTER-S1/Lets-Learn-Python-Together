@@ -7,11 +7,15 @@ print("Python Programmer's Glossary Bible")
 print('This block of code can be used and reused again and again.')
 '''
 
+'''----------------------------------------------------------------'''
+
 # Call the 'exec' funcion as many times as you please.
 
 exec(redundant_code)
 exec(redundant_code)
 exec(redundant_code)
+
+'''----------------------------------------------------------------'''
 
 # Here is an example, using a for-loop to call the 'exec' function.
 
