@@ -7,6 +7,7 @@ execution run. You can use as many parent/upper classes you wish. However, only 
 which is always the last class act. You don't need to invoke def functions to use classes either. However, we \
 are going to learn about both types such as this program example below, which doesn't invoke def functions at all.
 '''
+
 # Type and execute/run the program example below and see what
 # happens.
 
@@ -33,6 +34,8 @@ print(Child.d)
 # The 'pass' function tells the program to ignore the empty code block until later use,
 # via the programmer's choice.
 
+'''----------------------------------------------------------------'''
+
 # Now let's place a 'print' statement where the 'pass' function was. Type and
 # execute/run the program below and see what happens.
 
@@ -56,6 +59,8 @@ print(Child.gp)
 print(Child.m)
 print(Child.d)
 
+'''----------------------------------------------------------------'''
+
 # Sometimes a code block needs information, but you, the programmer does not wish
 # to provide that, and that's where the 'pass' function comes in handy. Sometimes you
 # don't want to use any code in a code block at all; that's the whole purpose of what
@@ -75,6 +80,8 @@ class pass_function:
 # 'pass' function in any type of empty code block to avoid potential errors from
 # occurring.
 
+'''----------------------------------------------------------------'''
+
 # Classes can also be single classes, such as the program example below illustrates.
 # Type and execute/run the program below and see what happens.
 
@@ -82,6 +89,8 @@ class Single_class:
     sc='I\'m a single class.'
 
 print(Single_class.sc)
+
+'''----------------------------------------------------------------'''
 
 # Here is a simple Mom class and a simple Dad class, along with their simple Child
 # class. Type and execute/run the program example below and see what happens.
@@ -114,6 +123,8 @@ print(Mom.mom,Dad.dad)
 
 print(Child.mom,Child.dad)
 
+'''----------------------------------------------------------------'''
+
 # Here is our very same Mom and Dad class program example, which uses list
 # variables called 'mom' and 'dad'. Type and execute/run the program below and see
 # what happens.
@@ -137,6 +148,8 @@ class Child(Mom,Dad):
 
 print(f'The Child class inherits all classes:\n{Child.mom[0]}')
 print(f'The Child class inherits all classes:\n{Child.dad[1]}')
+
+'''----------------------------------------------------------------'''
 
 # Now let's have some fun and change the words in the list. Let's also use double (")
 # quote marks instead of single (') quote marks. Note: the (f') format function is not
@@ -163,6 +176,8 @@ class Child(Mom,Dad):
 print(Child.mom[0])
 print(Child.dad[1])
 
+'''----------------------------------------------------------------'''
+
 # Tip: invoke the 'pass' function to make it much easier to create classes. Remove any
 # 'pass' functions you no longer need, when adding code inside empty code blocks.
 # Type and execute/run the program example below and see what doesn't happen.
@@ -175,6 +190,8 @@ class Dad:
 
 class Child(Mom,Dad):
     pass
+
+'''----------------------------------------------------------------'''
 
 # The program above works just fine even if it shows no output on the screen. The
 # reason that is, is simply because the 'pass' functions are just empty placeholders
@@ -195,6 +212,8 @@ class Child(Mom,Dad):
 print(Mom.mom)
 print(Child.mom)
 print(Mom.mom,Child.mom)
+
+'''----------------------------------------------------------------'''
 
 # Now it's time to grow up and learn some more about classes, without Mom and Dad
 # around. Classes don't need to be called Mom and Dad or Child to work. You can give
@@ -222,6 +241,8 @@ c=My_Shapes('Dodecagon','Twelve Sides')
 print(f'{a.shape} {b.shape} {c.shape}')
 print(f'{a.shape_sides()} {b.shape_sides()} {c.shape_sides()}')
 
+'''----------------------------------------------------------------'''
+
 # The program example below is the very same program example above. The only
 # difference is, 'num' was added to create a third argument.
 
@@ -241,6 +262,8 @@ c=Shapes('Dodecagon',12,'sides')
 print(f'{a.shape} {b.shape} {c.shape}')
 print(f'{a.num} {b.num} {c.num}')
 print(f'{a.shape_sides()} {b.shape_sides()} {c.shape_sides()}')
+
+'''----------------------------------------------------------------'''
 
 # The program example above uses a dunder method, which consists of two double
 # underscores '__ __', called dunders. The dunder 'init' method is one of the most used
@@ -355,6 +378,8 @@ print(a+b+c.sides)
 
 print(a.shape_sides(),b.shape_sides(),c.shape_sides())
 
+'''----------------------------------------------------------------'''
+
 # The program example below converts two integers into string characters, while still
 # being able to calculate the result of the actual integer values themselves. Type and
 # execute/run the program example below and see what happens.
@@ -370,6 +395,8 @@ class Dunder_str:
 dunder=Dunder_str(26,2+3)
 
 print ("I want these integers to be a string, using 'str'.",str(dunder),'here.')
+
+'''----------------------------------------------------------------'''
 
 # The program example below uses the dunder method '__repr__', which follows the
 # dunder method '__str__' as a fallback for programmers to see code as human,
@@ -392,6 +419,8 @@ dunder=Dunder_str(26,2+3)
 print("I want these integers to be a string, using 'str'.",str(dunder),'here.')
 
 print("I want these integers to be an object, using 'repr'.",repr(dunder),'here.')
+
+'''----------------------------------------------------------------'''
 
 # Here is a multi-class function program that has multiple def statements in it. Each
 # def statement has a different return math operation, such as addition, subtraction,
@@ -472,6 +501,8 @@ print(Math4.square(5,2))
 
 print(Math5.cube(5,2))
 
+'''----------------------------------------------------------------'''
+
 # The class function program example below works exactly the same as the class
 # 'Shapes' function program example does. Type and execute/run the program and
 # see what happens.
@@ -488,6 +519,8 @@ b=Scientists('Albert','Einstein')
 c=Scientists('Isaac','Newton')
 d=Scientists('Galileo','Galilei')
 
+'''----------------------------------------------------------------'''
+
 # Try these 'print' statement examples below and change the letter 'b' to the letter 'a'
 # and try the letter 'c' and so on. Re-execute/run the program and see what happens.
 
@@ -499,6 +532,8 @@ print(f'{b.full_name()}')
 
 print(f'{b.full_name()} loves science, and \
 so does {a.full_name()}, along with {d.first_name}.')
+
+'''----------------------------------------------------------------'''
 
 # Type and execute/run the program example below and see what
 # happens.
