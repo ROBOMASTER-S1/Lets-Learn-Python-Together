@@ -4,6 +4,8 @@
 # the '0b' is Python's prefix, which simply tells Python to work with binary base 2
 # numbers.
 
+'''----------------------------------------------------------------'''
+
 # Convert any number into a binary base 2 number.
 
 print(bin(255))
@@ -15,6 +17,8 @@ print(hex(255))
 # Convert any number into an octal base 8 number.
 
 print(oct(255))
+
+'''----------------------------------------------------------------'''
 
 # Type and execute/run each of these program examples below and see what
 # happens.
