@@ -46,6 +46,8 @@ print(timer.strftime('%A %B %d,%Y'))
 print(timer.strftime('Week %U'))
 print(timer.strftime('Day %j'))
 
+'''----------------------------------------------------------------'''
+
 # Now, let's create a tuple variable called 'show_time' so we can reduce even more
 # balky code, and also gain greater manipulative programming skills at the same time.
 # Type and execute/run the program example below and see what happens.
@@ -68,6 +70,8 @@ print(timer.strftime(show_time[1]))
 print(timer.strftime(show_time[2]))    
 print(timer.strftime(show_time[3]))
 print(timer.strftime(show_time[4]))
+
+'''----------------------------------------------------------------'''
  
 # Now change and rearrange the tuple number values [0] through [4] in the program
 # example above and re-execute/run the program and see what happens.
@@ -102,6 +106,8 @@ while True:
     
     time.sleep(1)
     os.system('cls')
+    
+'''----------------------------------------------------------------'''
 
 # Now, let's use a while-loop and a for-loop to completely reduce our Python clock\
 # program; remember to keep it (DRY): 'Don't Repeat Yourself' as shown in the examples \
