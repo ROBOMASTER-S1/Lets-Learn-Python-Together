@@ -19,6 +19,9 @@ print(4>=5) False: 4 is not greater than or equal to 5
 print(4==5) False: 4 does not equal 5
 print(4!=5) True: 4 does not equal 5
 '''
+
+'''-----------------------------------------------------------------------------'''
+
 # Type and execute/run this simple 'print' statement program example below, using
 # the logical operators in different combinations as was illustrated above and see
 # what happens when you change the logical operators.
@@ -26,6 +29,8 @@ print(4!=5) True: 4 does not equal 5
 print(4<5)
 
 # Screen output:	True
+
+'''-----------------------------------------------------------------------------'''
 
 # Type and execute/run these 'print' statement program examples, using the (f')
 # format implementer.
@@ -61,6 +66,9 @@ the 'if:', 'elif:', 'else', 'true', 'false', 'and', 'or' and 'not' conditionals,
 can do the job as they were designed for doing, which are to test values against other values and comparing \
 data against user input data.
 '''
+
+'''-----------------------------------------------------------------------------'''
+
 # Using simple 'print' statements, you can do simple True and False tests to help you
 # determine the outcome of a conditional against another conditional, such as True
 # and False conditionals. For example:
@@ -90,6 +98,8 @@ print(False is not False)
 print(True is not False)
 print(False is not True)
 
+'''-----------------------------------------------------------------------------'''
+
 # Use operators to check to see if a value is True or False.
 
 print(True == True)
@@ -98,6 +108,8 @@ print(True != False)
 print(False != True)
 print(True >= False)
 print(True <= False)
+
+'''-----------------------------------------------------------------------------'''
 
 # Here is a prime example of how these conditionals work in conjunction with the
 # logical operators. In this program example, the conditionals 'if:' and 'elif:' are
@@ -137,6 +149,8 @@ elif num<=5:
     
 elif num>=5:
     print(f'False! {num} is is not greater than or equal to 5.')
+    
+'''-----------------------------------------------------------------------------'''
 
 # In this program example, the conditional 'else:' statement is executed only when the
 # value 5 equals itself. Type and execute/run the program below and see what
@@ -155,6 +169,8 @@ elif integer>5:
 else:
     if integer==5:
         print(f'True! {integer} equals equals 5.')
+        
+'''-----------------------------------------------------------------------------'''
 
 # Type and execute/run this program example and change the value 'num=5' to
 # different values, such as 'num=9', 'num=-7'.....
@@ -170,6 +186,8 @@ elif num>5:
 else:
     if num==5:
         print(f'{num} equals equals 5.')
+        
+'''-----------------------------------------------------------------------------'''
 
 # The conditionals 'True' and 'False' will only be true if both conditonals are true. They
 # can also be true if both conditionals are false. Conditionals cannot be true and false
@@ -234,6 +252,8 @@ if conditional==True:
      
 elif conditional==False:
      print('False!')
+        
+'''-----------------------------------------------------------------------------'''
 
 # This small program example waits for the user to type "True" or "False". If the user
 # types 'true', then the 'print' statement 'print('True!')' is executed. If the user types
@@ -249,6 +269,8 @@ elif conditional=='false':
      
 else:
      print('Oops! Wrong keys:')
+        
+'''-----------------------------------------------------------------------------'''
 
 # This program example waits for the user to type in a number against 5 to see if it's
 # true or false. Type and execute/run this program example and type numbers, either
@@ -275,6 +297,8 @@ try:
         
 except ValueError:
     print('That is incorrect!')
+    
+'''-----------------------------------------------------------------------------'''
 
 # Type and execute/run this fun true/false program example below and see what
 # happens when you type either 'START', 'STOP' 'HELP' or 'Q'.
@@ -334,6 +358,8 @@ elif gate1 or gate2:
 
 else:
     print(f' "AND" is true because gate1 is "{gate1}" and gate2 is "{gate2}".')
+    
+'''-----------------------------------------------------------------------------'''
 
 # Type and execute/run The George Boole Game program example to get a better
 # understanding of how Boolean Logic works and why it works.Type different "True"
@@ -380,7 +406,8 @@ and Bool2 is "{Boole2.title()}".\n')
     else:
         print('Type the right vales please!')
 
-        
+'''-----------------------------------------------------------------------------'''
+
 # The 'not' Operator
 
 '''
@@ -406,6 +433,8 @@ if Boole==False:
     print(Boole)
     
 print('George Boole says \'False\' because \'False\' and \'False\' are false.')
+
+'''-----------------------------------------------------------------------------'''
 
 # Here are two examples of how 'True' and 'False' values contradict one another,
 # which causes these two program examples below not to show any output on the
@@ -456,6 +485,8 @@ if Boole==True:
     
 print('George Boole does not contradict himself.')
 
+'''-----------------------------------------------------------------------------'''
+
 # These two program examples below show how a 'not' operator makes a true value
 # become a false value, and how a false value becomes a true value.
 
@@ -474,6 +505,8 @@ if not  variable:
 
 else:
     print('True Becomes False')
+    
+'''-----------------------------------------------------------------------------'''
 
 # Here are some more examples of 'True' and 'False' conditionals. Type and
 # execute/run each of these program examples below and see what happens when
@@ -496,6 +529,8 @@ if Boole==True:
 else:
      Boole==False
      print('False')
+    
+'''-----------------------------------------------------------------------------'''
 
 # Here are some more examples of the 'not' operator. Type and execute/run each of
 # these program examples below and see what happens when a 'True' value is 'not'
