@@ -60,6 +60,8 @@ my_replace_word=list_string_name.replace('Fox','Canine')
 
 print(my_replace_word)
 
+'''----------------------------------------------------------------'''
+
 # Numeric Strings:
 '''
 Numeric stings can be any name, letters or letters combined with numbers, starting \
@@ -231,6 +233,8 @@ character_string='printed text.'
 
 print('Numeric string calculation {} \
 mixed in with {}'.format(numeric_string,character_string))
+
+'''----------------------------------------------------------------'''
 
 # Let's have some fun with string concatenation. See what happens when you type
 # and execute/run these program examples below.
