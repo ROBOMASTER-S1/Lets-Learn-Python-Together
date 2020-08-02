@@ -12,6 +12,8 @@ import winsound
 
 winsound.PlaySound('SPEECH OFF',winsound.SND_ASYNC)
 
+'''----------------------------------------------------------------'''
+
 # The wave sound program below looks similar to the one above. The only difference
 # is, the wave sound program below waits to play the wave sound before continuing
 # on with the rest of the Python program. Type and execute/run the program example
