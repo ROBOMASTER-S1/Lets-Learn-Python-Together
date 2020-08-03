@@ -330,7 +330,7 @@ print(a+b+c.num)
 # There are several types of dunder methods in Python. However, we will only focus
 # on the ones we will learn for now.
 
-# Take a close look at these two program examples below. You Notice there are
+# Take a close look at these two program examples below. You notice there are
 # yellow highlighted variables. These variables indicate how these two, very same
 # program examples can be written. Both program examples do exactly the same
 # thing, even though they look a wee bit different. Type and execute/run these two
@@ -469,6 +469,8 @@ print(Sum.cube(5,2))
 # Let's add three class functions together inside the 'print' statement.
 
 print(Sum.addit(5,2)+Sum.subtr(5,2)+Sum.cube(5,2))
+
+'''----------------------------------------------------------------'''
 
 # Now, let's create a list called 'x' and add all the class functions together inside the
 # 'print' statement. Remember to use list indexing ie: [ ] starting at list index [0]. Also
