@@ -13,6 +13,8 @@ i=0
 while i<10:
     print(f'\nCount Loop! "{i}" ')
     i+=1
+    
+'''-----------------------------------------------------------------------------'''
 
 # This conditional while-loop example will never ever stop looping, until the user
 # presses either "y" or "n" followed by pressing the "Enter" key to confirm. If the user
@@ -44,6 +46,8 @@ conditional while-loop example: ').strip()
     
 print('\n"Yay!" You broke out of the while-loop example.')
 
+'''-----------------------------------------------------------------------------'''
+
 # This conditional while-loop example will never ever stop looping, until the user
 # presses "y" followed by the "Enter" key to confirm. If the user presses any other key
 # except "y", the conditional while-loop will keep on looping forever. After the while-
@@ -73,6 +77,8 @@ while-loop example.')
 while-loop example, until you give me "y".')
         
 print('\nThis is the end of the entire conditional while-loop example:')
+
+'''-----------------------------------------------------------------------------'''
 
 # This conditional while-loop example will never ever stop looping, until the user types
 # the number "10" followed by pressing the "Enter" key to confirm. If the user types
