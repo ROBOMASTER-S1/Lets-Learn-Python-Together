@@ -867,6 +867,8 @@ while chance<3:
         print(f'\nYou have 3 chances left before the while-loop breaks out anyway!')
         
         chance+=1
+        
+'''----------------------------------------------------------------'''
 
 # This for-loop example does exactly the same thing, the above while-loop example
 # shows. The only difference is, the while-loop is a conditional loop, whereas the for-
