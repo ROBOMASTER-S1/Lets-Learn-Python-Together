@@ -51,6 +51,8 @@ a55a='19'
 
 print(f'\n{n2n} the crazy {a1a} is {a55a} years old.')
 
+'''----------------------------------------------------------------'''
+
 # Replace part of a string's value 'Ed the Fox is great!' with 'Ed the Canine is great!'
 # example:
 
@@ -230,6 +232,8 @@ character_string='printed text.'
 print('Numeric string calculation {} \
 mixed in with {}'.format(numeric_string,character_string))
 
+'''----------------------------------------------------------------'''
+
 # Let's have some fun with string concatenation. See what happens when you type
 # and execute/run these program examples below.
 
@@ -300,6 +304,8 @@ tuple_string=('Python','Programmer\'s','Glossary','Bible')
 for i in tuple_string:
     print(i)
 
+'''----------------------------------------------------------------'''
+
 # This tuple program example omits the 'min' and 'max' functions for each tuple set:
 # 'min_num', and 'max_num'. The 'add_values' variable adds min_num and max_num'
 # tuple values together which equals 11.
@@ -366,6 +372,8 @@ list_string=['Python','Programmer\'s','Glossary','Bible']
 for i in list_string:
     print(i)
 
+'''----------------------------------------------------------------'''
+
 '''List String Modification Examples:'''
 
 # A list can always be changed or midified, but a tuple cannot be changed or midified.
@@ -378,6 +386,8 @@ list_string_name.append('Wonder Woman')
 
 print(f'\nMy name is {list_string_name[2]} and I\'m a Super Hero.')
 
+'''----------------------------------------------------------------'''
+
 # The inserted list value: 'The Tick' is now at position '0' where the list value: 'Super
 # Man' was. The list value: 'Super Man' got moved from positon'0' into positon '1'
 # instead.
@@ -386,6 +396,8 @@ list_string_name=['Super Man','Bat Man','Spider Man']
 list_string_name.insert(0,'The Tick')
 
 print(f'\nMy name is {list_string_name[1]} and I\'m a Super Hero.')
+
+'''----------------------------------------------------------------'''
 
 # The removed list value: 'Spider Man' is gone from the string's name range:
 # list_string_name. Position '0', and position '1' are all that is left in the string's name
@@ -396,6 +408,8 @@ list_string_name.remove('Spider Man')
 
 print(f'\nMy name is {list_string_name[1]} and I\'m a Super Hero.')
 
+'''----------------------------------------------------------------'''
+
 # The popped list value: 'Super Man' at position '0' is now 'Bat Man' at position '0',
 # where the value 'Super Man' was.
 
@@ -403,6 +417,8 @@ list_string_name=['Super Man','Bat Man','Spider Man']
 list_string_name.pop(0)
 
 print(f'\nMy name is {list_string_name[0]} and I\'m a Super Hero.')
+
+'''----------------------------------------------------------------'''
 
 # The sort list values: 'Super Man','Bat Man','Spider Man' get reversed as list values:
 # 'Super Man','Spinder Man','Bat Man'. The sort list value 'Super Man' remains at
@@ -420,6 +436,8 @@ print(f'\nMy name is {list_string_name[1]} and I\'m a Super Hero.')
 sorted(list_string_name)
 print(list_string_name)
 
+'''----------------------------------------------------------------'''
+
 '''Two Dimensional List Examples:'''
 
 # A two dimensional list is simply a list within another list. For example, a one
@@ -432,6 +450,8 @@ my_1d_list=['value 1','value 2']
 my_2d_list=[
     ['value 1','value 2'],['value 3','value 4']
     ]
+
+'''----------------------------------------------------------------'''
 
 # A two dimensional list can hold as many list value blocks as one sees fit. For
 # example: the my_2d_list variable has three list value blocks in it.
@@ -446,6 +466,8 @@ my_2d_list=[
     [1,2],[3,4]
     ]
 
+'''----------------------------------------------------------------'''
+
 # Display a two dimensional list's character values to check them.
 
 my_2d_list=[
@@ -456,6 +478,8 @@ print(my_2d_list)
 
 # Screen output:	[['value 1', 'value 2'], ['value 3', 'value 4']]
 
+'''----------------------------------------------------------------'''
+
 # Display a two dimensional list's numeric values to check them.
 
 my_2d_list=[
@@ -465,6 +489,8 @@ my_2d_list=[
 print(my_2d_list)
 
 # Screen output:	[[1, 2], [3, 4]]
+
+'''----------------------------------------------------------------'''
 
 # Display a two dimensional list's character value pair to check them.
 
@@ -484,6 +510,8 @@ print(my_2d_list[1])
 
 # Screen output:	['value 3', 'value 4']
 
+'''----------------------------------------------------------------'''
+
 # Display a two dimensional list's numeric value pair to check them.
 
 my_2d_list=[
@@ -501,6 +529,8 @@ my_2d_list=[
 print(my_2d_list[1])
 
 # Screen output:	[3, 4]
+
+'''----------------------------------------------------------------'''
 
 # Display a single character value from a two dimensional list. Examples:
 
@@ -536,6 +566,8 @@ print(my_2d_list[1][1])
 
 # Screen output:	value 4
 
+'''----------------------------------------------------------------'''
+
 # Display a single numeric value from a two dimensional list. Examples:
 
 my_2d_list=[
@@ -570,6 +602,8 @@ print(my_2d_list[1][1])
 
 # Screen output:	4
 
+'''----------------------------------------------------------------'''
+
 # Create a multiple two dimensional list, using letter and number values. Create a
 # simple 'print' program example, which will use a two dimensional list.
 
@@ -586,6 +620,8 @@ print(f'I have a {name[3][0]}. My Sister {name[1][3]} wants a {name[3][2]}.')
 
 print(f'{name[1][0]} loves {name[3][3]} so much. But {name[0][1]} \
 wants a {name[3][1]} instead.')
+
+'''----------------------------------------------------------------'''
 
 '''Multiple String Variables and Multiple String Values Examples:'''
 '''
@@ -605,6 +641,8 @@ print(a,b,c,d)
 print(d,c,b,a)
 
 print(c,b,a,d)
+
+'''----------------------------------------------------------------'''
 
 # The 'len' function is excellent at keeping track of how many tuple values or list values
 # there are. Checking to see how many values there are in a tuple or list makes
@@ -629,6 +667,9 @@ list_len=[
     ]
 
 print(len(list_len))
+
+'''----------------------------------------------------------------'''
+
 '''Dictionary Examples:'''
 '''
 Dictionaries are like lists, but they hold "key" values that point to other values in the list. \
@@ -658,6 +699,8 @@ print(dictionary_list['kind'])
 
 print(dictionary_list['colour'])
 
+'''----------------------------------------------------------------'''
+
 # Update the dictionary_list values with the '.update' statement followed by the new
 # dictionary_list:
 
@@ -680,6 +723,8 @@ print(dictionary_list['name'])
 print(dictionary_list['age'])
 
 print(dictionary_list['colour'])
+
+'''----------------------------------------------------------------'''
 
 # This dictionary_list example illustrates how key values can point to multiple values,
 # denoted by square brackets '[ ]' around the list value groups. For example: the key
@@ -705,6 +750,8 @@ print(dictionary_list['Insects'][0])
 print(dictionary_list['Insects'][1])
 print(dictionary_list['Insects'][2])
 print(dictionary_list['Insects'][3])
+
+'''----------------------------------------------------------------'''
 
 # Update the dictionary_list values with the '.update' statement followed by the new
 # dictionary_list:
@@ -738,6 +785,8 @@ print(dictionary_list['Insects'][1])
 print(dictionary_list['Insects'][2])
 print(dictionary_list['Insects'][3])
 
+'''----------------------------------------------------------------'''
+
 # Display the dictionary key values to check them.
 
 dictionary_list=(
@@ -748,6 +797,8 @@ dictionary_list=(
 print(dictionary_list.keys())
 
 # Screen output:	dict_keys(['Animals', 'Reptiles', 'Insects'])
+
+'''----------------------------------------------------------------'''
 
 # Display the dictionary list values to check them.
 
@@ -760,6 +811,8 @@ print(dictionary_list.values())
 
 # Screen output:	dict_values([['Dog', 'Cat', 'Bird', 'Fish'], ['Turtle',
 # 'Lizard','Snake', 'Frog'], ['Butterfly', 'Beetle', 'Ant', 'Bee']])
+
+'''----------------------------------------------------------------'''
 
 # Delete a dictionary key value and check it.
 
@@ -774,6 +827,8 @@ print(dictionary_list.keys())
 
 # Screen output:	dict_keys(['Reptiles', 'Insects'])
 
+'''----------------------------------------------------------------'''
+
 # Delete a dictionary list value and check it.
 
 dictionary_list=(
@@ -787,6 +842,8 @@ print(dictionary_list.values())
 
 # Screen output:	dict_values([['Cat', 'Bird', 'Fish'], ['Turtle', 'Lizard',
 # 'Snake', 'Frog'], ['Butterfly', 'Beetle', 'Ant', 'Bee']])
+
+'''----------------------------------------------------------------'''
 
 # Pop a dictionary key value and check it. The key value "Animals" is not deleted, but
 # it's no longer in the dictionary list. However, it is returnable.
@@ -806,6 +863,8 @@ print(pop_key)
 
 # Screen output:	['Dog', 'Cat', 'Bird', 'Fish']
 
+'''----------------------------------------------------------------'''
+
 # Display the length of dictionary key values to check them.
 
 dictionary_list=(
@@ -820,6 +879,8 @@ print(dictionary_list.keys())
 # Screen output:	3
 
 # Screen output:	dict_keys(['Animals', 'Reptiles', 'Insects'])
+
+'''----------------------------------------------------------------'''
 
 # Display the length of dictionary list values to check them.
 
@@ -836,6 +897,8 @@ print(dictionary_list.values())
 
 # Screen output:	dict_values([['Dog', 'Cat', 'Bird', 'Fish'], ['Turtle',
 # 'Lizard', 'Snake', 'Frog'], ['Butterfly', 'Beetle', 'Ant', 'Bee']])
+
+'''----------------------------------------------------------------'''
 
 # To add a new dictionary key value, simply use ['Set Key name example']='New Value'
 # to display the length of dictionary list key values to check them. Note: one dictionary
@@ -855,6 +918,8 @@ print(dictionary_list.keys())
 # Screen output:	4
 
 # Screen output:	dict_keys(['Animals', 'Reptiles', 'Insects', 'Fish'])
+
+'''----------------------------------------------------------------'''
 
 # To add new dictionary values, simply use ['Set Key name example']='Value','New
 # Value','New Value',New Value' Display the length of dictionary list values to check
@@ -877,6 +942,8 @@ print(dictionary_list.values())
 # Screen output:	dict_values([['Dog', 'Cat', 'Bird', 'Fish'], ['Turtle', 
 # 'Lizard', 'Snake', 'Frog'], ['Butterfly', 'Beetle', 'Ant', 'Bee'], ('Angelfish', 
 # 'Devilfish', 'Catfish', 'Dogfish')])
+
+'''----------------------------------------------------------------'''
 
 # To look for a dictionary key value, simply use the '.get' method to search for it.
 # Display the dictionary key values to check them.
@@ -901,6 +968,8 @@ dictionary_list=(
 print(dictionary_list.get('Fish','Not Found!'))
 
 # Screen output:	Not Found!
+
+'''----------------------------------------------------------------'''
 
 # This time, let's look for an actual key value and check it, using the 'get' methond. The
 # screen output now looks like this:
