@@ -291,7 +291,7 @@ print(str.__add__('a','b'))
 # wouldn't use a dunder '__str__' method with integer values; likewise, you wouldn't
 # use a dunder '__add__' method with character string values.
 
-# Take a close look at these two program examples below. You Notice there are
+# Take a close look at these two program examples below. You notice there are
 # yellow highlighted variables. These variables indicate how these two, very same
 # program examples can be written. Both program examples do exactly the same
 # thing, even though they look a wee bit different. Type and execute/run these two
