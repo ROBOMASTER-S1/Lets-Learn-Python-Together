@@ -190,7 +190,7 @@ else:
 # The conditionals 'True' and 'False' will only be true if both conditonals are true. They
 # can also be true if both conditionals are false. Conditionals cannot be true and false
 # at the same time, nor can it be 'yes' and 'no' at the same time. For example, if 'True'
-# and 'True' are the same, they equal rue. Likewise if 'False' and 'False' are the same,
+# and 'True' are the same, they equal true. Likewise if 'False' and 'False' are the same,
 # they too equal true. However 'True' and 'False' are not the same, so they equal  false. 
 # Likewise False' and 'True' are not the same, so they equal false as well. Type and
 # execute/run these rogram examples below.
