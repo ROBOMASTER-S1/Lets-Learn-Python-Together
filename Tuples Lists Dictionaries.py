@@ -61,6 +61,8 @@ my_replace_word=list_string_name.replace('Fox','Canine')
 
 print(my_replace_word)
 
+'''----------------------------------------------------------------'''
+
 '''Numeric Strings:'''
 '''
 Numeric stings can be any name, letters or letters combined with numbers, starting \
@@ -145,6 +147,8 @@ num3=2
 
 print('\nAlbert Einstein loves to count to {} \
 using the order of operation.'.format(num1+num2*num3+num3))
+
+'''----------------------------------------------------------------'''
 
 '''String Concatenation:'''
 '''
@@ -242,6 +246,8 @@ p5="mer's";p6='Glos';p7='sary';p8='Bib';p9='le" '
 
 print(p1+p2,p3+p4+p5,p6+p7,p8+p9,'\nBy Joseph C. Richardson')
 
+'''----------------------------------------------------------------'''
+
 # When commas ',' are used, they act as spaces in between strings. However, when
 # plus signs '+' are used, there are no spaces in between strings. When using a plus
 # sign '+' it is important to create spaces in the values themselves, example. p3=' Pro'.
@@ -250,6 +256,8 @@ p1=' "Pyt';p2='hon';p3=' Pro';p4='gram'
 p5="mer's";p6=' Glos';p7='sary';p8=' Bib';p9='le" '
 
 print(p1+p2+p3+p4+p5+p6+p7+p8+p9+'\nBy Joseph C. Richardson')
+
+'''----------------------------------------------------------------'''
 
 '''Tuple String Examples:'''
 '''
@@ -298,6 +306,8 @@ tuple_string=('Python','Programmer\'s','Glossary','Bible')
 
 print(f' "{tuple_string[0]} {tuple_string[1]} {tuple_string[2]} {tuple_string[3]}" ')
 
+'''----------------------------------------------------------------'''
+
 # Loop through a tuple string with a for-loop.
 
 tuple_string=('Python','Programmer\'s','Glossary','Bible')
@@ -324,6 +334,8 @@ number pluss maximum number={add_values}')
 # 			Maximum number = 10
 
 # 			Minimum number pluss maximum number = 11
+
+'''----------------------------------------------------------------'''
 
 '''List String Examples:'''
 '''
@@ -428,6 +440,8 @@ list_string_name=['Super Man','Bat Man','Spider Man']
 list_string_name.sort(reverse=True)
 
 print(f'\nMy name is {list_string_name[1]} and I\'m a Super Hero.')
+
+'''----------------------------------------------------------------'''
 
 # Note: the sorted list program example below only returns a preview of what the list
 # would look like if it was sorted; it doesn't modify or change the actual characteristics
