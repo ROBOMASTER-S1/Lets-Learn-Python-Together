@@ -298,6 +298,10 @@ except ValueError:
     
 '''-----------------------------------------------------------------------------'''
 
+# I must give stern credit to Mosh from YouTube for this little conditional Python programming
+# lesson. This one is quite the mouthful, even for me. All I did was simply change the
+# words from starting and stopping the car, to staring and stopping a spacecraft.
+
 # Type and execute/run this fun true/false program example below and see what
 # happens when you type either 'START', 'STOP' 'HELP' or 'Q'.
 
@@ -331,6 +335,8 @@ Press "Q" to quit.\n')
     
     else:
         print(f'Sorry! cannot understand "{command}".')
+        
+'''-----------------------------------------------------------------------------'''
 
 "AND" "OR" and "NOT"
 '''
