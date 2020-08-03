@@ -1143,8 +1143,9 @@ try:
 except MemoryError:
     print('MemoryError:')
 finally:
-    print('finally always executes no matter the outcome.')
+    print('finally always executes no matter the outcome.')    
     
+'''----------------------------------------------------------------'''    
 
 # Raise a list of possible errors to test in Python programs.
 
