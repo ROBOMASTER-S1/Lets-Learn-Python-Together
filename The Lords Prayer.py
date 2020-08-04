@@ -1,4 +1,4 @@
-# The Lord's Prayer in programming is a stern, healthy MUST!
+# The Lord's Prayer in programming is a stern, healthy MUST!-:))
 
 The_Lords_Prayer=(
     'Our Father who art in heaven, hallowed be thy name.\n\
