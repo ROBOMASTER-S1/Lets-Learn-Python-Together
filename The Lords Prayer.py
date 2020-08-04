@@ -1,3 +1,5 @@
+# The Lord's Prayer in programming is a stern, healthy MUST!
+
 The_Lords_Prayer=(
     'Our Father who art in heaven, hallowed be thy name.\n\
 Thy kingdom come. Thy will be done on earth as it is in heaven.\n\
