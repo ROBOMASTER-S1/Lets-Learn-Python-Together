@@ -28,3 +28,7 @@ Joseph C. Richardson
 The Python Tutorial is a great reference tool to get you started.
 
 https://docs.python.org/3/tutorial/index.html
+
+w3schools.com
+
+https://www.w3schools.com/python/python_for_loops.asp
