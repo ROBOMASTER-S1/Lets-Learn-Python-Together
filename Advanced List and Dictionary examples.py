@@ -1,6 +1,6 @@
 # Advanced List and Dictionary examples
 
-# Please not: these list and dictionary examples don't
+# Please note: these list and dictionary examples don't
 # have any comments, other than these seven comments
 # only. However, I will be adding lots of comments to these
 # advanced list and dictionary examples when I update my
