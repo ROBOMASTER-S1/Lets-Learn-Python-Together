@@ -38,7 +38,7 @@ print(f'\nMy name is {list_string_name[2]} and I\'m a Super Hero.')
 '''----------------------------------------------------------------'''
 
 # Here is a non manual example of this very same code, using a for-loop: The for-loop
-# also inciments the string's data values, which makes the code more efficient, without
+# also increments the string's data values, which makes the code more efficient, without
 # the manual redundancy on the programmer's part.
 
 tuple_string_name=('Super Man','Bat Man','Spider Man')
