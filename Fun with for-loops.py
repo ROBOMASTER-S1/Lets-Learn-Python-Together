@@ -20,6 +20,28 @@ for i in nums:
     
 '''----------------------------------------------------------------'''
 
+# Create while-loops that can find numbers, then make them break
+# or keep on incrementing 'i' until 'i=30. Type and execute/run the
+# program examples below and see what happens.
+
+i=1
+while i<=30:
+    print(i)
+    i+=1
+    if i==20:
+        print(f'"{i}" I found number "{i}". I will break the loop now.')
+        break
+ 
+i=1
+while i<=30:
+    print(i)
+    i+=1
+    if i==20:
+        print(f'"{i}" I found number "{i}". I will keep looping, until "i=30".')
+        i+=1
+        
+'''----------------------------------------------------------------'''
+
 # Create a for-loop, using an 'input' statement that
 # allows the user to input the number of the for-loop.
 # If a number doesn't exist, the for-loop breaks.
