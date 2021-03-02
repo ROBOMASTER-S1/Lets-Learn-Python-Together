@@ -9,7 +9,7 @@ print('This block of code can be used and reused again and again.')
 
 '''----------------------------------------------------------------'''
 
-# Call the 'exec' funcion as many times as you please.
+# Call the 'exec' function as many times as you please.
 
 exec(redundant_code)
 exec(redundant_code)
