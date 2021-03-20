@@ -92,8 +92,8 @@ sentence=(
     ('went home to have dinner.',
     'went to the store to buy some food.',
     'wanted some pizza for breakfast.',
-     'wanted computers for Christmas.',
-     'love their computers.'))
+    'wanted computers for Christmas.',
+    'love their computers.'))
 
 for i in range(4):
         print(f'{names[i][0]}, {names[i][1]} \
