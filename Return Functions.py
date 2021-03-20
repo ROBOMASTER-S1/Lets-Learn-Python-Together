@@ -124,19 +124,19 @@ def args_example(*args):
     return args[0]
 
 print(args_example( # insert a hard line break if you like.
-  'Test with numbers',0,1,2,3,4,5,6,7,8,9,'Example.'))
+  'Text with numbers',0,1,2,3,4,5,6,7,8,9,'Example.'))
 
 # Example 2:
 
 def args_example(*args):
     return( # insert a hard line break if you like.
-    'Test with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
+    'Text with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
 
 print(args_example()[0])
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 def kwargs_example(**kwargs):
   return( # insert a hard line break if you like.
-    'Test with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
+    'Text with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
 
 print(kwargs_example()[0])
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -147,7 +147,7 @@ def args_example(*args):
   return args
 
 args=args_example( # insert a hard line break if you like.
-  'Test with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
+  'Text with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
 
 print(args[0])
 
@@ -155,7 +155,7 @@ print(args[0])
 
 def args_example(*args):
   return( # insert a hard line break if you like.
-    'Test with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
+    'Text with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
 
 args=args_example()
 
@@ -163,7 +163,7 @@ print(args[0])
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 def kwargs_example(**kwargs):
   return( # insert a hard line break if you like.
-    'Test with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
+    'Text with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
 
 kwargs=kwargs_example()
 
@@ -176,7 +176,7 @@ def args_example(*args):
   return args
 
 args=args_example( # insert a hard line break if you like.
-  'Test with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
+  'Text with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
 
 for i in args:
   print(i,end=' ') # add the 'end=' function to create single-line text output.
@@ -186,7 +186,7 @@ for i in args:
 
 def kwargs_example(**kwargs):
   return( # insert a hard line break if you like.
-    'Test with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
+    'Text with numbers',0,1,2,3,4,5,6,7,8,9,'Example.')
 
 kwargs=kwargs_example()
 
