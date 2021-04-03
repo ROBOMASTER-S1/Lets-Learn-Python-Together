@@ -5,7 +5,7 @@
 # function shows how the threads work, as if looking at
 # them in a slow motion time lapse to show how they
 # work with each def function call thread. Threading gives
-# the illusion that each of the four def funtions are running
+# the illusion that each of the four def functions are running
 # at the same time, when really, they aren't.
 
 from time import sleep as delay;import threading
