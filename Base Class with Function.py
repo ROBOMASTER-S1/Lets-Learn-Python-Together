@@ -1,3 +1,12 @@
+# Let's create a base class called Pets with a function called
+# get_attributes. The base class has a __init__ constructor
+# method in it, which means that any functions inside the base
+# class will be able to use the attributes from the __init__
+# constructor method. For example, the self.dog attribute is
+# inside the get_attributes function, while the a.dog attribute
+# is outside the Pets class and the get_attribute function. Take
+# a close look at the 'print' statement outside the Pets class.
+
 class Pets:
     def __init__(self,dog,cat,bird,fish):
         self.dog=dog;self.cat=cat
