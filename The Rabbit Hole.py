@@ -3,7 +3,6 @@ The only extensive way to truly understand Python
 is to go deep, deep down that Rabbit Hole. So what
 are you waiting for? Let's go...
 '''
-
 # 'str()' function example:
 
 # 'str()' is short for 'string'
@@ -452,4 +451,3 @@ functs[0](x) # False
 x=functs[15](num)
 
 functs[0](x) # True
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
