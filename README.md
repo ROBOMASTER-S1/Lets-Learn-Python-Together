@@ -19,7 +19,7 @@ Explore the Wonderful World of Robotics Programming.
 
 If anyone has a Robomaster S1 from DJI, why not have some fun learning all about how to program it with me, as I am still very new to the Robomaster S1’s Python programming abilities. So far, all my Robomaster S1 Python program codes are just simple for now. You can learn how to program the LED’s, the blaster, the gimbal and the chassis.
 
-So why not have some fun and learn to program the Robomasster S1 with me. I will keep adding more and more Robomaster S1 Python programming examples.
+So why not have some fun and learn to program the Robomaster S1 with me. I will keep adding more and more Robomaster S1 Python programming examples.
 
 Because, the more I can learn is the more fun we both can have.
 
