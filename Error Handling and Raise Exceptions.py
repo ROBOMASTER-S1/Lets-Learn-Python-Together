@@ -69,7 +69,7 @@ except ResourceWarning:
 
 try:
      pass
-except Execeptions:
+except Exception:
      pass
 else:
      pass
