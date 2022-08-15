@@ -20,10 +20,9 @@ purple='\x1b[35m'
 white='\x1b[37m'
 
 title_text=f'fibonary bits in action!'.title(),'fibonacci natural number sequence'.title()
-text=('binary digits: ','octal digits: ','hexadecimal digits: ','decimal digits: ',
-      'fibonacci digits: '.title())
+text=('binary digits: ','octal digits: ','hexadecimal digits: ','decimal digits:','fibonacci digits: '.title())
 
-lb='\n';lbb='\n\n';elb='=\n';eq='=';sp=' '
+lb='\n';lbb='\n\n';elb=' =\n';eq=' = ';sp=' '
 
 num1=0;num2=1
 fib=[num1,num2]
@@ -38,10 +37,12 @@ while True:
     
     b=f'{num3:b}';o=f'{num3:o}'
     x=f'{num3:X}';d=f'{num3:d}'
-    
-    print(white+lb+sp*16+title_text[0],lb+red,lb,sp*2,len(b),green+text[0].title()+\
-          yellow+b+blue,elb,sp*2+green+red,len(o),green+text[1].title()+yellow+\
-          o+blue,elb,sp*2+green+red,len(x),green+text[2].title()+yellow+x+\
-          blue,eq,green,lb,sp*2+red,len(d),green+text[3].title()+blue+eq,yellow+\
+
+# Non formatted print() function example:
+
+    print(white+lb+sp*16+title_text[0]+lb+red+lb+sp*3,len(b),green+text[0].title()+\
+          yellow+b+blue+elb+sp*3+green+red,len(o),green+text[1].title()+yellow+\
+          o+blue+elb+sp*3+green+red,len(x),green+text[2].title()+yellow+x+\
+          blue+eq+green+lb+sp*3+red,len(d),green+text[3].title()+blue+eq+yellow+\
           d+lbb+white+sp*11+title_text[1]+lbb+green+sp*4+text[4]+yellow+f'{num3:,}')
     delay(pause)
