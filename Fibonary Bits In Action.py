@@ -9,7 +9,7 @@
 
 # Created by Joseph C. Richardson
 
-import os;os.system('title fibonary bits in action!'.title())
+import os;os.system('title fibonary bits in action! 1'.title())
 from time import sleep as delay
 
 red='\x1b[31m'
@@ -19,7 +19,7 @@ yellow='\x1b[33m'
 purple='\x1b[35m'
 white='\x1b[37m'
 
-title_text=f'fibonary bits in action!'.title(),'fibonacci natural number sequence'.title()
+title_text=f'fibonary bits in action! 1'.title(),'fibonacci natural number sequence'.title()
 text=('binary digits: ','octal digits: ','hexadecimal digits: ','decimal digits:','fibonacci digits: '.title())
 
 lb='\n';lbb='\n\n';elb=' =\n';eq=' = ';sp=' '
@@ -40,9 +40,9 @@ while True:
 
 # Non formatted print() function example:
 
-    print(white+lb+sp*16+title_text[0]+lb+red+lb+sp*3,len(b),green+text[0].title()+\
-          yellow+b+blue+elb+sp*3+green+red,len(o),green+text[1].title()+yellow+\
-          o+blue+elb+sp*3+green+red,len(x),green+text[2].title()+yellow+x+\
-          blue+eq+green+lb+sp*3+red,len(d),green+text[3].title()+blue+eq+yellow+\
+    print(white+lb+sp*16+title_text[0]+lb+red+lb+sp*3,len(b),green+text[0].title()+
+          yellow+b+blue+elb+sp*3+green+red,len(o),green+text[1].title()+yellow+
+          o+blue+elb+sp*3+green+red,len(x),green+text[2].title()+yellow+x+
+          blue+eq+green+lb+sp*3+red,len(d),green+text[3].title()+blue+eq+yellow+
           d+lbb+white+sp*11+title_text[1]+lbb+green+sp*4+text[4]+yellow+f'{num3:,}')
     delay(pause)
