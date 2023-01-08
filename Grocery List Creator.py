@@ -9,6 +9,16 @@ Please enjoy.
 '''
 import os
 
+text_colours=(
+    '\x1b[31m', # index 0 = red
+    '\x1b[32m', # index 1 = green
+    '\x1b[33m', # index 2 = yellow
+    '\x1b[34m', # index 3 = blue
+    '\x1b[35m', # index 4 = purple
+    '\x1b[36m', # index 5 = cyan
+    '\x1b[37m'  # index 6 = white
+    )
+
 title='title grocery list creator'
 clear_screen='cls'
 single_line_break='\n'
@@ -58,7 +68,7 @@ def items_list():
 
     while True:
         os.system(clear_screen)
-        grocery_list=input(sentence[0].title()
+        grocery_list=input(text_colours[5]+sentence[0].title()
         +sentence[1]+sentence[2]).strip()
         user_input_item_data.append(grocery_list)
 
@@ -70,7 +80,7 @@ def items_list():
 
         try:
             os.system(clear_screen)
-            item_price=float(input(sentence[0].title()
+            item_price=float(input(text_colours[5]+sentence[0].title()
             +sentence[1]+sentence[3]).strip())
             user_input_price_data.append(item_price)
         except ValueError:
