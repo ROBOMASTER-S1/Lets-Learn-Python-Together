@@ -41,7 +41,7 @@ f'{double_line_break}{indent}Please type your grocery list items: ', # index 2
 
 f'{double_line_break}{indent}Please type your grocery list item price: $', # index 3
 
-f'{double_line_break}{indent}You have', # indext 4
+f'{double_line_break}{indent}{text_colours[5]}You have', # indext 4
 
 'items in your grocery list.', # index 5
 
@@ -52,8 +52,8 @@ f'{single_line_break}{indent}Your grocery list total:', # index 7
 f'''{single_line_break}{indent}Do you wish to add more items to your grocery list?
 {single_line_break}{indent}Press "y" or "n" to confirm: ''', # index 8
 
-f'{single_line_break}{indent}thank you for choosing grocery list creator... \
-press enter to exit.', # index 9
+f'{single_line_break}{indent}Thank you for choosing Grocery List Creator... \
+Press "Enter" to exit.', # index 9
 ]
 
 user_input_item_data=[ ]
@@ -80,7 +80,7 @@ def items_list():
 
         try:
             os.system(clear_screen)
-            item_price=float(input(text_colours[5]+sentence[0].title()
+            item_price=float(input(sentence[0].title()
             +sentence[1]+sentence[3]).strip())
             user_input_price_data.append(item_price)
         except ValueError:
@@ -101,7 +101,7 @@ ${user_input_price_data[x]/decimal_point}'.title())
 
         total_sum=user_input_price_data
         
-        print(f'{sentence[7]} ${sum(total_sum)/decimal_point}',
+        print(f'{sentence[7]}{text_colours[1]} ${sum(total_sum)/decimal_point}',
               sentence[4],len(item),sentence[5])
 
         grocery_list=input(sentence[8]).lower().strip()
@@ -116,4 +116,4 @@ ${user_input_price_data[x]/decimal_point}'.title())
 
 items_list()
 os.system(clear_screen)
-input(sentence[9].title())
+input(text_colours[6]+sentence[9])
