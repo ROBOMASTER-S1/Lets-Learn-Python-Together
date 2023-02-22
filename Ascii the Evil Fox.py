@@ -24,4 +24,4 @@ print('Stay away from the Evil '+str(fox),'Python Program Example!') # non forma
 
 print('Stay away from the Evil {} Python Program Example!'.format(fox)) # old formatted string example
 
-print(f'Stay away from the Evil {fox} Python Program Example!') # new formatted string example
+print(f'Stay away from the Evil {fox} Python Program Example!') # new formatted f' string example
