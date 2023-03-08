@@ -1,5 +1,7 @@
 # Let's-Learn-Python-Together
 
+![image](https://user-images.githubusercontent.com/34896540/223653543-f49dc6af-a0b4-4fa6-8646-1a384483692b.png)
+
 Learn Python Programming with me.
 
 These Python files are meant to be explored. Some examples show possible text errors that beginners should know and understand,
