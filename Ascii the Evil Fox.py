@@ -2,15 +2,25 @@
 
 # Try this Bone Chilling Ascii Code Python Program Example if You Dare!
 
+# Created by Joseph C. Richardson, GitHub.com
+
 fox=ord('f')+ord('o')+ord('x')
 
-print('The Devil\'s Number:',fox*2)
+char_num=102,111,120
+
+print('The Devil\'s Lucky Number:' ,(102+111+120)*2)
+
+print('The Devil\'s Lucky Number: '+str((102+111+120)*2))
+
+print('The Devil\'s Lucky Number:',int(char_num[0]+char_num[1]+char_num[2])*2)
+
+print('The Devil\'s Lucky Number:',fox*2)
 
 # Or this example if you like.
 
 fox=(ord('f')+ord('o')+ord('x'))*2
 
-print('The Devil\'s Number:',fox)
+print('The Devil\'s Lucky Number:',fox)
 
 # Here are some string concatenation examples:
 
