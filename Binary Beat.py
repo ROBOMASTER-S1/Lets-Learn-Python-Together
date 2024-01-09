@@ -1,8 +1,7 @@
+
 from time import sleep as delay;import os;os.system('title Binary Beat')
 
-# For all you Hardcore Python Programmers out there,
-# this One's for YOU! Welcome to the Binary Beat in
-# Motion Python program example.
+# Created by Joseph C. Richardson, GitHub.com
 
 red='\x1b[31m'
 green='\x1b[32m'
@@ -10,17 +9,15 @@ blue='\x1b[34m'
 yellow='\x1b[33m'
 purple='\x1b[35m'
 white='\x1b[37m'
-
-text=f'binary base 2, Octal base 8, hexadecimal \
-base 16, decimal base 10 systems:\n'.title()
-
-a=0
+os.system('cls')
+n=0
 while True:
-    print(purple+'\n'+' '*2+text+blue,'\n',' '*20,len(f'{a:b}'),green+\
-          'binary digits: '.title()+yellow+f'{a:b} '+red+'=\n',' '*22+green+\
-          ' octal digits: '.title()+yellow+f'{a:o} '+red+'=\n',' '*22+green+\
-          ' hexadecimal: '.title()+yellow+f'{a:X} '+red+'= '+green,'\n',' '*22,
-          f'decimal: '.title()+red+'= '+yellow+f'{a:d}')
-    delay(.5)
-    os.system('cls')
-    a+=1
+    print(white+'\n'+' '*6+'welcome to the binary beat in motion python program example'.title()
+          +yellow+'\n\n'+' '*6+'1     1    1    1    1   1   1   1 = eight bits or one byte'
+          +'\n\n'+' '*6+'128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = decimal number: 255''\n\n'+' '*2
+          +'binary base: 2, octal base: 8, hexadecimal base: 16, decimal base: 10'.title()
+          +'\n\n'+' '*3+yellow,len(f'{n:b}'),green+'binary digits: '.title()
+          +yellow+f'{n:b} '+red+'=\n\n'+' '*3+yellow,len(f'{n:o}'),green+'octal digits: '.title()
+          +yellow+f'{n:o} '+red+'=\n\n'+green+' '*3+yellow,len(f'{n:x}'),green+'hexadecimal digits: '.title()
+          +yellow+f'{n:X} '+red+'= '+green+'\n\n'+' '*3+yellow,len(f'{n:d}'),green+'decimal digits: '.title()
+          +red+'= '+yellow+f'{n:d}');delay(1);os.system('cls');n+=1
