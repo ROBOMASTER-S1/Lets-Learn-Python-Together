@@ -1,13 +1,18 @@
 x = []
 line_brk='\n'
-sentence='type a list of four words: '.capitalize()
+dline_brk='\n\n'
+text=print,input
+loop=range
 
-for i in range(5):
-    message=input(sentence).title().strip()
+sentence='type a list of five words: '.capitalize(),\
+          'you have all'.capitalize(),'items in your list of words.'
+
+for i in loop(1,6):
+    message=text[1](sentence[0]).title().strip()
     x.append(message)
     x.sort()
 
-print(line_brk+x[0],x[1],x[2],x[3])
+for j in loop(i):
+    text[0](x[j],end=' ')
 
-
-                
+text[0](dline_brk+sentence[1],i,sentence[2])
