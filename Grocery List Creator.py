@@ -1,7 +1,7 @@
 '''
 Grocery List Creator Python program
 
-Created by Joseph C. Richardson
+Created by Joseph C. Richardson, GitHub.com
 
 This is a full functional grocery list Python program example to add to my Python book.
 Feel free to copy this Python program example if you like. See what you can do with it.
