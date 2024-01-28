@@ -235,9 +235,6 @@ my_cast[1]()
 
 my_cast[2]()
 
-
-input()
-
 # Use the := Walrus Operator to create the following Python prgram
 # examples, using tuples(), lists[] and dictionaries{}.
 
@@ -274,7 +271,6 @@ print('''That's 'GREAT' to "TRIPPLE QUOTES" ''')
 # and much more text oriented.
 
 print("""That's 'GREAT' to "TRIPPLE QUOTES" """)
-
 
 # Use Python's Error Handlers to not only stop errors from occurring.
 # But you can also use Error Handlers to manipulate Python code flow
@@ -375,13 +371,10 @@ print(x.get(1,'Not Found!'))
 
 print(x := {1,2,3,4,5,6,7,8,9})  # x creates a set of values
 
-
-input()
 x = sum([1,2,3,4,5,6,7,8,9])
 y = sum([10,11,12,13,14,15,16,17,18,19])
 
 print(f'x = {x} and y = {y}. x+y = {x+y}') # x = 45 and y = 145. x+y = 190
-
 
 # The 'is' and 'not' prefixes are the very same things as '==' and '!='.
 # The prefix 'is' is a literal '==', meaing that 'is' is goes deeper into
@@ -413,7 +406,6 @@ print(2 != y) # False because y = 2
 print(not x) # False because x = 1
 print(not y) # False because y = 2
 
-
 # Check the 'animals' variable list of values to see how many values
 # contain like 'letters'. For example, the letter 'i' is in three values:
 # Bird, Fish and Lizard. The for loop will only show text output with
@@ -425,7 +417,6 @@ animals = ['Cat','Dog','Bird','Fish','Lizard']
 for i in animals:
     if 'k' in i:
         print(f'The word "{i}" has {len(i)} letters in it.')
-
 
 # The logical 'in' is great to use if you want to know if a value
 # is 'in' a list[ ], a tuple( ), a dictionary{ }, a set() and a print( ) function.
@@ -476,9 +467,6 @@ if 'more text' in my_list:
 
 else:
     print('does not appear in the list.')
-
-
-
 
 input()
 # Here is something else we can do with the Walrus := operator.
@@ -650,5 +638,3 @@ loop = integer_num,binary_base_2,hexadecimal_base_16
 
 for i in loop:
     text_print(f'{i(255)}. You only need one print statement with a list of variables.')
-
-input()
