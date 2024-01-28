@@ -652,4 +652,3 @@ for i in loop:
     text_print(f'{i(255)}. You only need one print statement with a list of variables.')
 
 input()
-
