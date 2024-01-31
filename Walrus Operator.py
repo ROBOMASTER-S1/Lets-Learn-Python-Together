@@ -27,7 +27,6 @@ for value in my_dictionary:print(
     my_dictionary.get(value+1,f"There are no more values to loop \
 through after 'Value {value}'."))
 
-
 # Look what you can do with Python's print() function.
 
 # Use three single ''' quotes to make string concatenation much easier
@@ -39,7 +38,6 @@ print('''That's 'GREAT' to "TRIPPLE QUOTES" ''')
 # and much more text oriented.
 
 print("""That's 'GREAT' to "TRIPPLE QUOTES" """)
-
 
 # Use Python's Error Handlers to not only stop errors from occurring.
 # But you can also use Error Handlers to manipulate Python code flow
@@ -143,3 +141,83 @@ x = sum([1,2,3,4,5,6,7,8,9])
 y = sum([10,11,12,13,14,15,16,17,18,19])
 
 print(f'x = {x} and y = {y}. x+y = {x+y}') # x = 45 and y = 145. x+y = 190
+
+# Here is something else we can do with the Walrus := operator.
+# Here are two Python program examples that will show you the
+# 'if' statement, using the none walrus := operator, and the use
+# of the walrus := operator with the 'if' statement.
+
+x = 3
+
+if x == 3:print(x)
+
+# Notice how the very same Python code above is exactly the
+# very same Python code as below. As you can clearly see, the
+# walrus := operator reduces the usual two lines of Python code
+# down to just one, single line of Python code.
+
+if x := 3:print(x) # the walrus := operator makes x act as if it were named first.
+
+# You don't have to create a variable first, to then place it within an
+# 'if' statement using the walrus := operator.
+
+# Welcome to the the split() function. This split() function has a dot '. '
+# in front of it that joins the variable, 'poem' to the split() function
+# using another variable called, 'text'. What the split() function does
+# is turns any text paragraphs into an actual list of words, which you
+# can then use their indexes [index] to pick out words within the poem.
+
+poem = '''‘Knowledge’
+is a free invention of the heart and of the mind itself!
+The only textbooks needed, are the heart and the mind.
+The only exam to be written is the key to ponder into wonder.
+For the heart and the mind hold the key to the greatest diploma of all,
+the dream’s creation of our imagination.
+For the heart and the mind are thus, the greatest teachers of us…
+Believe in yourself! For you are their greatest student.'''
+
+# For example: the first word in the poem is 'Knowledge', which is
+# index[0] with the single quote marks as in no spaces in between them
+# or the word Knowledge. Any words therafter dosen't have quote marks;
+# only the title of the poem as in normal poems, sometimes you want
+# quote marks in a title or word/words alike.
+
+text = poem.split()
+
+print(text[0]) # index[0] is the word with single quote marks: 'Knowledge'
+
+poem = '''‘Knowledge’
+is a free invention of the heart and of the mind itself!
+The only textbooks needed, are the heart and the mind.
+The only exam to be written is the key to ponder into wonder.
+For the heart and the mind hold the key to the greatest diploma of all,
+the dream’s creation of our imagination.
+For the heart and the mind are thus, the greatest teachers of us…
+Believe in yourself! For you are their greatest student.'''
+
+# Here, we can use Python's Walrus Operator := to check our list of words
+# within the poem right on the spot and on one, single line of Python code
+# at that.
+
+print(text := poem.split())
+
+# Here is the old way, I taught you, as others had taught you. Let's check our
+# list of words without the help of the walrus := operator and see how we have
+# to use two lines of Python code to create the same thing as we did above
+# using the walrus := operator. When you are happy with your list of words,
+# you can throw away only one line of Python code, instead throwing away
+# two lines of Python code. The walrus := operator makes this a single line
+# snap that you can just throw away one line of Python code.
+
+text = poem.split()
+
+print(text)
+
+# Now that I'm happy with my list. I can start picking out words, via their indexes.
+
+print(text[1]) # index[1] is the word: is
+
+# Let's use a for loop to call up all the words to the poem, without showing ugly
+# commas ' , ' and index[ ] brackets.
+
+for i in text:print(i)
