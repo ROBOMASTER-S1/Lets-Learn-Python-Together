@@ -92,7 +92,7 @@ if x == x:
 if x := (0,1,2,3,4,5):
     try:
         print(x[6],'is in the "x" variable tuple().')
-        print(x[4]+'character string')
+        print(x[4]+'character string')       
     except IndexError:
         print('The IndexError handler stops index errors from occurring.')
     except TypeError:
@@ -112,7 +112,7 @@ if x := (0,1,2,3,4,5):
     except TypeError:
         print('The TypeError handler stops Type errors from occurring.')
 
-# Use the := Walrus Operator to tempararly check for values in tuples,
+# Use the := Walrus Operator to temporarily check for values in tuples,
 # lists, dictionaries and sets. That way, you can be a bit lazy and
 # not have to write two lines of code only to check for values. Note:
 # default tuples won't work with the := walrus operator for indexing.
@@ -121,7 +121,7 @@ if x := (0,1,2,3,4,5):
 
 print(x := 1,2,3,4,5,6,7,8,9)  # x creates a default tuple of values
 
-print(x[0]) # TypeError: 'int' object is not subscriptable
+print(x[0]) # TypeError: 'int' object is not subscripted
 
 print(x := (1,2,3,4,5,6,7,8,9))  # x creates a tuple of values
 
@@ -178,7 +178,7 @@ Believe in yourself! For you are their greatest student.'''
 
 # For example: the first word in the poem is 'Knowledge', which is
 # index[0] with the single quote marks as in no spaces in between them
-# or the word Knowledge. Any words therafter dosen't have quote marks;
+# or the word Knowledge. Any words thereafter doesn't have quote marks;
 # only the title of the poem as in normal poems, sometimes you want
 # quote marks in a title or word/words alike.
 
