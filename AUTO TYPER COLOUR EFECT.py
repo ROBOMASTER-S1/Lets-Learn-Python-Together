@@ -1,4 +1,4 @@
-# AUTO TYPER EFECT Python program example.
+# AUTO TYPER COLOUR EFECT Python program example.
 
 # Created by Joseph C. Richardson, GitHub.com
 
