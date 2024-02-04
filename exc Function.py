@@ -1,4 +1,4 @@
-# The exc() Python program examples
+# The exc() Function Python program examples
 
 # Created by Joseph C. Richardson, GitHub.com
 
@@ -32,4 +32,4 @@ for i in range(10):print(i)
 '''
 exec(reuse_code) # call the exec() function as many times as you wish
 exec(reuse_code)
-exec(reuse_code)    
+exec(reuse_code)
