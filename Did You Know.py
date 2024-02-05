@@ -39,6 +39,7 @@ text_print = print
 value_error = ValueError
 value_length = len
 you_quitter = quit
+must_exit = exit
 
 # Let's try a simple print() command/function and see what this does
 # We will also create a variable to be a text placeholder, so we don't
