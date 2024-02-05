@@ -34,3 +34,4 @@ https://docs.python.org/3/tutorial/index.html
 w3schools.com
 
 https://www.w3schools.com/python/python_for_loops.asp
+I am almost a complete Walking Human Computer Science Research Laboratory Machine on Two Legs. 😁
