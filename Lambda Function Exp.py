@@ -1,5 +1,5 @@
 # LAMBDA functions are 'nameless', 'anonymous' functions.
-#They are still very new to me, but at least we can cheat. lol
+# They are still very new to me, but at least we can cheat. lol
 
 # HIGHLIGHT AND COPY CODE, THEN PASTE INTO YOUR PREFERABLE PYTHON APP/IDLE
 
