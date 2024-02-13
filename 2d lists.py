@@ -2,6 +2,8 @@
 # A 2d list is a two dimensional array that can hold multiple
 # 2d list array values under a single variable. For example:
 
+# HIGHLIGHT AND COPY CODE, THEN PASTE INTO YOUR PREFERABLE PYTHON APP/IDLE
+
 my_2d_list=['2d list0'],['2d list0']
 
 print(my_2d_list[0][0])
