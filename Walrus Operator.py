@@ -1,4 +1,4 @@
-# Walrus Operator program example.
+# Walrus Operator Python program example.
 
 # Created by Joseph C. Richardson, GitHub.com
 
