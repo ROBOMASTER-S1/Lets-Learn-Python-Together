@@ -4,9 +4,9 @@
 
 # HIGHLIGHT AND COPY CODE, THEN PASTE INTO YOUR PREFERABLE PYTHON APP/IDLE
 
-# Type and execute/run this program example and see
-# how the while-loop only breaks when one of the two
-# 'break' statements is executed. If none of them gets
+# Execute/run this program example and see how the
+# while-loop only breaks when one of the two 'break'
+# statements is executed. If none of them gets
 # executed, the while-loop keeps on iterating. This
 # program example is another great example of how
 # the conditional 'if:' and 'elif:' statements work in
