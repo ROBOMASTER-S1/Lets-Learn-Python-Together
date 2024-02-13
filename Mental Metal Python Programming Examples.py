@@ -19,6 +19,255 @@
 # Just go and get it is all you have to do, and trust yourself and take the
 # time to learn this kind of programming thing. Who knows? You might LOVE
 # IT!
+'''
+Create three different integer sets that will combine/unionize all three sets into one
+single set. Convert the single set into a list, using the list() function. Next, view the
+contents of the list, along with the slice() function to set the range of list content
+values to display on the screen.
+
+Type and execute/run this Python program example below.
+'''
+# To reduce lines of code, create packed variables and their
+# packed values.
+
+x,y,z=(
+    {1,2,3,4,9,6,7,8,5,9,10},
+    {11,12,13,14,15,16,17},
+    {18,19,20,21,22,23,24})
+
+a=slice(24) # slice the set with the slice() function
+
+# To reduce lines of code, create packed variables and their
+# packed values.
+
+length1,length2,length3=len(x),len(y),len(z)
+
+unionize=x.union(y,z) # unionize x to y and z with the value v.union() function
+
+convert=list(unionize) # cast the set to a list with the list() function
+
+answer=length1,length2,length3
+
+# Add the total values between length1, length2 and length3 with the sum()
+# function.
+
+total_sum=sum(answer) # add all three values of answer together with the sum() function
+
+# View the contents of x, y and z in their combined, converted sets to a list.
+
+print('View the value contents of the unionized list to check it:\n\n'+str(convert[a]))
+
+# Create a variable called sentence_loop, along with all its values.
+
+sentence_loop=(
+    f'\nThe length of (x) = {length1}',f'The length of (y) = {length2}',
+    f'The length of (z) = {length3}',f'\nThe total lengths of x+y+z = {total_sum}')
+
+# Create a for loop that will loop through the sentence_loop variable, using a
+# single print() function. The for loop will iterate until all the values are cycled
+# through the sentence_loop variable.
+
+for i in sentence_loop:print(i)
+
+x={1,2,3,4,9,6,7,8,5,9}
+y={10,11,15,13,14,12,16,17,18,19,19}
+z={20,21,22,23,27,25,26,24,28,29,22}
+
+unionize=x.union(y).union(z)
+
+convert=list(unionize)
+
+a=slice(20)
+
+print(convert[a])
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+x={1,2,3,4,9,6,7,8,5,9}
+y={10,11,15,13,14,12,16,17,18,19,19}
+z={20,21,22,23,27,25,26,24,28,29,22}
+
+unionize=x.union(y,z)
+
+convert=list(unionize)
+
+a=slice(20)
+
+print(convert[a])
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+a=list()
+for i in range(10):
+    a.append(i)
+
+b=set()
+for i in range(10):
+    b.add(i)
+
+print(a)
+print(b)
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+nums1={1,1,2,3,4,5,6}
+nums2={1,2,2,3,4}
+
+print(nums1 | nums2) # Union
+
+print(nums1.union(nums2)) # Union
+
+nums1={1,1,2,3,4,5,6}
+nums2={1,2,2,3,4}
+
+print(nums1 & nums2) # Intersection
+
+print(nums1.intersection(nums2)) # Intersection
+
+nums1={1,1,2,3,4,5,6}
+nums2={1,2,2,3,4}
+
+print(nums1 - nums2) # Difference
+
+print(nums1.difference(nums2)) # Difference
+
+nums1={1,1,2,3,4,5,6}
+nums2={1,2,2,3,4}
+
+print(nums1.symmetric_difference(nums2)) # Symmetric Difference
+
+print(nums1 ^ nums2) # Symmetric Difference
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+nums1={0,1,2,3,1,3,4,10,5,6,6,7,8,9,10,23}
+nums2={1,2,7,1,3,4,10,5,6,6,7,8,9,10,11,22}
+
+print(nums1 | nums2) # Union
+print(nums1 & nums2) # Intersection
+print(nums1 - nums2) # Difference
+print(nums1 ^ nums2) # Symmetric Difference
+
+nums1=[1,2,3,1,3,4,10,5,6,6,7,8,9,10]
+nums2=[1,2,3,1,3,4,10,5,6,6,7,8,9,10]
+
+uniques1=set(nums1)
+uniques2=set(nums2)
+
+print(uniques1 | uniques2)
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'''
+Did you know you can create variables for some of these Python
+commands/functions? This will give us much more opportunities
+to use variables as Python code in a for loop that loops through
+a list of values, which are actual Python commands/functions.
+You can create two or more Python commands/functions with
+just one for loop alone. Let's explore what these variables can
+do for us, using actual Python code itself.
+'''
+absolute_num = abs
+add_nums = sum
+ascii_character = ascii
+ascii_character_num = ord
+ascii_character_value = chr
+binary_base_2 = bin
+character_string = str
+convert_to_list = list
+convert_to_set = set
+convert_to_tuple = tuple
+dictionary = dict
+float_num = float
+George_Boole = bool
+hexadecimal_base_16 = hex
+index_error = IndexError
+integer_num = int
+maximum_num = max
+memory_error = MemoryError
+minimum_num = min
+redundant_code = exec
+round_num = round
+super_function = super
+text_input = input
+text_print = print
+value_error = ValueError
+value_length = len
+you_quitter = quit
+must_exit = exit
+
+# Let's try a simple print() command/function and see what this does
+# We will also create a variable to be a text placeholder, so we don't
+# have to keep rewriting text sentences over and over again.
+
+text = "This was Python's print() command/function."
+
+# this:
+
+print("This was Python's print() command/function.")
+
+# or this:
+
+text_print(text) # use variables instead if you like
+
+# Let's try a few more to get the hange of things. Let's add some numbers
+# together with the sum() command/function, we renamed to 'add_nums'
+# using a variable to store the actual sum() command/function. We also
+# need to create a variable we'll call nums, so we can store a default tuple
+# of numbers without any parenthesese, ie: (1,2,3,4,5,6,7,8,9)
+
+nums = 1,2,3,4,5,6,7,8,9 # this is a tuple by default, without parentheses ' () ' 
+
+# this:
+
+print(sum(nums))
+
+# or this:
+
+text_print(add_nums(nums))
+
+# Let's try a simple input() command/function and see what this does We will
+# create a variable to be a text placeholder, so we don't have to keep rewriting
+# text sentences over and over again. We also have to create an 'user_input'
+# variable so the user can type into it.
+
+input_text = "This was Python's input() command/function."
+
+# this:
+
+user_input = input("This was Python's input() command/function.")
+
+# or this:
+
+user_input = text_input(input_text)
+
+# Let's use a for loop to loop through a tuple of variables, which are actual Python
+# commands/functions. Let's creat our tuple called loop.
+
+loop = integer_num,binary_base_2,hexadecimal_base_16
+
+for i in loop:
+    text_print(f'{i(255)}. You only need one print statement with a list of variables.')
+
+1
+
+
+1
+
+COMPUTER SCIENCE & PYTHON PROGRAMMING EXAMPLES:
+COMPUTER SCIENCE & PYTHON PROGRAMMING EXAMPLES:
+2 weeks ago (edited)
+# Here is some MENTAL METAL PYTHON 'DEATH METAL' PROGRAMMING EXAMPLES
+# to play with. I say no more...
+
+# Note: not recommended for beginners. But why not?!
+
+# HIGHLIGHT AND COPY CODE, THEN PASTE INTO YOUR PREFERABLE PYTHON APP/IDLE
+
+# Just discover and learn from these Python programming examples below.
+# If you aren't sure what is happening. DO SOME HOMEWORK and figure
+# these all out for yourself over the internet, such as YouTube is a GREAT
+# START! That's the only place to start. I DID JUST THAT! I'm no hypocrite
+# when it comes to this type of learning style; it's there. USE IT! I DO!! As a
+# self taught Python programmer. I had to use VR teachers to teach me
+# EVERYTHING I KNOW about Python in general. I'm as Human as You. I'm
+# No one, nor am I BETTER THAN YOU! I had to learn all this Python stuff
+# from VR teachers, mostly them. They are all on my channel, of those I
+# recommend to others, who seek what I love to do. You can do it too...
+
+# Just go and get it is all you have to do, and trust yourself and take the
+# time to learn this kind of programming thing. Who knows? You might LOVE
+# IT!
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 poem = ('''‘Knowledge’
 is a free invention of the heart and of the mind itself!
@@ -229,3 +478,223 @@ for list1,list2,list3,list4,list5 in zip(fun_list1,fun_list2,fun_list3,fun_list4
 
 # Well, I think we pretty much learned what the enumerate() and zip() functions
 # do. Now, it's practice, practice, practice and more practice, practice, practice...
+
+'''
+Create three different integer sets that will combine/unionize all three sets into one
+single set. Convert the single set into a list, using the list() function. Next, view the
+contents of the list, along with the slice() function to set the range of list content
+values to display on the screen.
+
+Type and execute/run this Python program example below.
+'''
+# To reduce lines of code, create packed variables and their
+# packed values.
+
+x,y,z=(
+    {1,2,3,4,9,6,7,8,5,9,10},
+    {11,12,13,14,15,16,17},
+    {18,19,20,21,22,23,24})
+
+a=slice(24) # slice the set with the slice() function
+
+# To reduce lines of code, create packed variables and their
+# packed values.
+
+length1,length2,length3=len(x),len(y),len(z)
+
+unionize=x.union(y,z) # unionize x to y and z with the value v.union() function
+
+convert=list(unionize) # cast the set to a list with the list() function
+
+answer=length1,length2,length3
+
+# Add the total values between length1, length2 and length3 with the sum()
+# function.
+
+total_sum=sum(answer) # add all three values of answer together with the sum() function
+
+# View the contents of x, y and z in their combined, converted sets to a list.
+
+print('View the value contents of the unionized list to check it:\n\n'+str(convert[a]))
+
+# Create a variable called sentence_loop, along with all its values.
+
+sentence_loop=(
+    f'\nThe length of (x) = {length1}',f'The length of (y) = {length2}',
+    f'The length of (z) = {length3}',f'\nThe total lengths of x+y+z = {total_sum}')
+
+# Create a for loop that will loop through the sentence_loop variable, using a
+# single print() function. The for loop will iterate until all the values are cycled
+# through the sentence_loop variable.
+
+for i in sentence_loop:print(i)
+
+x={1,2,3,4,9,6,7,8,5,9}
+y={10,11,15,13,14,12,16,17,18,19,19}
+z={20,21,22,23,27,25,26,24,28,29,22}
+
+unionize=x.union(y).union(z)
+
+convert=list(unionize)
+
+a=slice(20)
+
+print(convert[a])
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+x={1,2,3,4,9,6,7,8,5,9}
+y={10,11,15,13,14,12,16,17,18,19,19}
+z={20,21,22,23,27,25,26,24,28,29,22}
+
+unionize=x.union(y,z)
+
+convert=list(unionize)
+
+a=slice(20)
+
+print(convert[a])
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+a=list()
+for i in range(10):
+    a.append(i)
+
+b=set()
+for i in range(10):
+    b.add(i)
+
+print(a)
+print(b)
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+nums1={1,1,2,3,4,5,6}
+nums2={1,2,2,3,4}
+
+print(nums1 | nums2) # Union
+
+print(nums1.union(nums2)) # Union
+
+nums1={1,1,2,3,4,5,6}
+nums2={1,2,2,3,4}
+
+print(nums1 & nums2) # Intersection
+
+print(nums1.intersection(nums2)) # Intersection
+
+nums1={1,1,2,3,4,5,6}
+nums2={1,2,2,3,4}
+
+print(nums1 - nums2) # Difference
+
+print(nums1.difference(nums2)) # Difference
+
+nums1={1,1,2,3,4,5,6}
+nums2={1,2,2,3,4}
+
+print(nums1.symmetric_difference(nums2)) # Symmetric Difference
+
+print(nums1 ^ nums2) # Symmetric Difference
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+nums1={0,1,2,3,1,3,4,10,5,6,6,7,8,9,10,23}
+nums2={1,2,7,1,3,4,10,5,6,6,7,8,9,10,11,22}
+
+print(nums1 | nums2) # Union
+print(nums1 & nums2) # Intersection
+print(nums1 - nums2) # Difference
+print(nums1 ^ nums2) # Symmetric Difference
+
+nums1=[1,2,3,1,3,4,10,5,6,6,7,8,9,10]
+nums2=[1,2,3,1,3,4,10,5,6,6,7,8,9,10]
+
+uniques1=set(nums1)
+uniques2=set(nums2)
+
+print(uniques1 | uniques2)
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'''
+Did you know you can create variables for some of these Python
+commands/functions? This will give us much more opportunities
+to use variables as Python code in a for loop that loops through
+a list of values, which are actual Python commands/functions.
+You can create two or more Python commands/functions with
+just one for loop alone. Let's explore what these variables can
+do for us, using actual Python code itself.
+'''
+absolute_num = abs
+add_nums = sum
+ascii_character = ascii
+ascii_character_num = ord
+ascii_character_value = chr
+binary_base_2 = bin
+character_string = str
+convert_to_list = list
+convert_to_set = set
+convert_to_tuple = tuple
+dictionary = dict
+float_num = float
+George_Boole = bool
+hexadecimal_base_16 = hex
+index_error = IndexError
+integer_num = int
+maximum_num = max
+memory_error = MemoryError
+minimum_num = min
+redundant_code = exec
+round_num = round
+super_function = super
+text_input = input
+text_print = print
+value_error = ValueError
+value_length = len
+you_quitter = quit
+must_exit = exit
+
+# Let's try a simple print() command/function and see what this does
+# We will also create a variable to be a text placeholder, so we don't
+# have to keep rewriting text sentences over and over again.
+
+text = "This was Python's print() command/function."
+
+# this:
+
+print("This was Python's print() command/function.")
+
+# or this:
+
+text_print(text) # use variables instead if you like
+
+# Let's try a few more to get the hange of things. Let's add some numbers
+# together with the sum() command/function, we renamed to 'add_nums'
+# using a variable to store the actual sum() command/function. We also
+# need to create a variable we'll call nums, so we can store a default tuple
+# of numbers without any parenthesese, ie: (1,2,3,4,5,6,7,8,9)
+
+nums = 1,2,3,4,5,6,7,8,9 # this is a tuple by default, without parentheses ' () ' 
+
+# this:
+
+print(sum(nums))
+
+# or this:
+
+text_print(add_nums(nums))
+
+# Let's try a simple input() command/function and see what this does We will
+# create a variable to be a text placeholder, so we don't have to keep rewriting
+# text sentences over and over again. We also have to create an 'user_input'
+# variable so the user can type into it.
+
+input_text = "This was Python's input() command/function."
+
+# this:
+
+user_input = input("This was Python's input() command/function.")
+
+# or this:
+
+user_input = text_input(input_text)
+
+# Let's use a for loop to loop through a tuple of variables, which are actual Python
+# commands/functions. Let's creat our tuple called loop.
+
+loop = integer_num,binary_base_2,hexadecimal_base_16
+
+for i in loop:
+    text_print(f'{i(255)}. You only need one print statement with a list of variables.')
