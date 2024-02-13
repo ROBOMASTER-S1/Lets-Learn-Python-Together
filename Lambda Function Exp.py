@@ -23,7 +23,6 @@ mylist=[1,2,3,4,5,6]
 p=list(map(lambda a:(a/3!=2),mylist))
 print(p)
 '''----------------------------------------------------------------'''
-
 from functools import reduce
 r=reduce(lambda a,b:a+b,[23,56,43,98,1])
 print(r)
