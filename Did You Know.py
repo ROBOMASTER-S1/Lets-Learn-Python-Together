@@ -1,11 +1,11 @@
-# Did You Know program example.
+# Did You Know Python program example.
 
 # Created by Joseph C. Richardson, GitHub.com
 
 # HIGHLIGHT AND COPY CODE, THEN PASTE INTO YOUR PREFERABLE PYTHON APP/IDLE
 '''
 Did you know you can create variables for some of these Python
-commands/functions? This will give us much more opertunities
+commands/functions? This will give us much more opportunities
 to use variables as Python code in a for loop that loops through
 a list of values, which are actual Python commands/functions.
 You can create two or more Python commands/functions with
@@ -24,7 +24,7 @@ convert_to_set = set
 convert_to_tuple = tuple
 dictionary = dict
 float_num = float
-George_Boole = bool
+george_boole = bool
 hexadecimal_base_16 = hex
 index_error = IndexError
 integer_num = int
@@ -59,7 +59,7 @@ text_print(text) # use variables instead if you like
 # together with the sum() command/function, we renamed to 'add_nums'
 # using a variable to store the actual sum() command/function. We also
 # need to create a variable we'll call nums, so we can store a default tuple
-# of numbers without any parenthesese, ie: (1,2,3,4,5,6,7,8,9)
+# of numbers without any parentheses, ie: (1,2,3,4,5,6,7,8,9)
 
 nums = 1,2,3,4,5,6,7,8,9 # this is a tuple by default, without parentheses ' () '
 
