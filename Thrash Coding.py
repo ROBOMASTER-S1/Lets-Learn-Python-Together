@@ -36,7 +36,7 @@ while length<=text_len(auto_text[0]):
 length=0
 while length<=text_len(auto_text[1]):
     os.system(clear_screen)
-    text(line_break+indent+auto_text[1][:length]) # foward backward text
+    text(line_break+indent+auto_text[1][:length]) # forward backward text
     delay(auto_type_speed)
     length+=1
 delay(1)
