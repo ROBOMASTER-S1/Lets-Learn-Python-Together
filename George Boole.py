@@ -1,13 +1,20 @@
 '''
 Written and created by Joseph C. Richardson, GitHub.com
 
-There once was a man, named 'George Boole' who was a famous mathematician. He invented these conditionals called Boolean Logic, which indirectly brought about the computer age we now live. The conditionals of George Boole are as follows.
+There once was a man, named 'George Boole' who was a famous mathematician. He invented these conditionals
+called Boolean Logic, which indirectly brought about the computer age we now live. The conditionals of
+George Boole are as follows.
 
 These conditionals are: 'IF', 'ELSE', 'TRUE', 'FALSE', 'AND', 'OR' 'NOT'
 
-In computer terminology, these conditionals are called "Boolean Logic". Boolean Logic is simply all about the concept of decision making laws, meaning if something is true, then it is not false. Likewise, if something is false, then it is not true.
+In computer terminology, these conditionals are called "Boolean Logic". Boolean Logic is simply all about
+the concept of decision making laws, meaning if something is true, then it is not false. Likewise, if something
+is false, then it is not true.
 
-When it comes to program development, sometimes logical operators aren't enough alone to do the job. In most cases, other conditionals are needed to help the logical operators do the job. With the 'if:', 'elif:', 'else', 'true', 'false', 'and', 'or' and 'not' conditionals, the logical operators can do the job as they were designed for doing, which are to test values against other values and comparing data against user input data.
+When it comes to program development, sometimes logical operators aren't enough alone to do the job. In most
+cases, other conditionals are needed to help the logical operators do the job. With the 'if:', 'elif:', 'else',
+'true', 'false', 'and', 'or' and 'not' conditionals, the logical operators can do the job as they were designed
+for doing, which are to test values against other values and comparing data against user input data.
 '''
 # Using simple 'print' statements, you can do simple True and
 # False tests to help you determine the outcome of a conditional
