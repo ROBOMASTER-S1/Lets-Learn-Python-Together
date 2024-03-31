@@ -2,8 +2,8 @@
 Written and created by Joseph C. Richardson, GitHub.com
 
 There once was a man, named 'George Boole' who was a famous mathematician.
-He invented these conditionals called Boolean Logic, which indirectly brought about
-the computer age we now live. The conditionals of George Boole are as follows.
+He invented these conditionals called Boolean Logic, which indirectly brought
+about the computer age we now live. The conditionals of George Boole are as follows.
 
 These conditionals are: 'IF', 'ELSE', 'TRUE', 'FALSE', 'AND', 'OR' 'NOT'
 
