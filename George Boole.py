@@ -1,20 +1,21 @@
 '''
 Written and created by Joseph C. Richardson, GitHub.com
 
-There once was a man, named 'George Boole' who was a famous mathematician. He invented these conditionals
-called Boolean Logic, which indirectly brought about the computer age we now live. The conditionals of
-George Boole are as follows.
+There once was a man, named 'George Boole' who was a famous mathematician.
+He invented these conditionals called Boolean Logic, which indirectly brought about
+the computer age we now live. The conditionals of George Boole are as follows.
 
 These conditionals are: 'IF', 'ELSE', 'TRUE', 'FALSE', 'AND', 'OR' 'NOT'
 
-In computer terminology, these conditionals are called "Boolean Logic". Boolean Logic is simply all about
-the concept of decision making laws, meaning if something is true, then it is not false. Likewise, if something
-is false, then it is not true.
+In computer terminology, these conditionals are called "Boolean Logic". Boolean Logic
+is simply all about the concept of decision making laws, meaning if something is true,
+then it is not false. Likewise, if something is false, then it is not true.
 
-When it comes to program development, sometimes logical operators aren't enough alone to do the job. In most
-cases, other conditionals are needed to help the logical operators do the job. With the 'if:', 'elif:', 'else',
-'true', 'false', 'and', 'or' and 'not' conditionals, the logical operators can do the job as they were designed
-for doing, which are to test values against other values and comparing data against user input data.
+When it comes to program development, sometimes logical operators aren't enough
+alone to do the job. In most cases, other conditionals are needed to help the logical
+operators do the job. With the 'if:', 'elif:', 'else', 'true', 'false', 'and', 'or' and
+'not' conditionals, the logical operators can do the job as they were designed for doing,
+which are to test values against other values and comparing data against user input data.
 '''
 # Using simple 'print' statements, you can do simple True and
 # False tests to help you determine the outcome of a conditional
@@ -89,13 +90,7 @@ elif num<5:
     print(f'True! {num} is less than 5.')
     
 elif num>5:
-    print(f'False! {num} is not greater than 5.')
-    
-elif num<=5:
-    print(f'True! {num} is less than or equal to 5.')
-    
-elif num>=5:
-    print(f'False! {num} is is not greater than or equal to 5.')
+    print(f'True! {num} is greater than 5.')
 
 # In this program example, the conditional 'else:' statement is
 # executed only when the value 5 equals itself. Type and execute/
@@ -216,7 +211,8 @@ else:
 # This program example waits for the user to type in a number
 # against 5 to see if it's true or false. Type and execute/run this
 # program example and type numbers, either less than 5 or
-# greater than 5 or equal to 5.
+# greater than 5 or equal to 5. We only want any number to be
+# less or equal to 5, not greater than 5.
 
 try:    
     num=int(input('Type in a number and I will condition the result against 5 as either \
@@ -225,17 +221,11 @@ try:
     if num==5:
         print(f'True! {num} equals equals 5.')
         
-    elif num<5:
-        print(f'True! {num} is less than 5.')
-        
-    elif num>5:
-        print(f'False! {num} is not greater than 5.')
-        
     elif num<=5:
         print(f'True! {num} is less than or equal to 5.')
         
     elif num>=5:
-        print(f'False! {num} is is not greater than or equal to 5.')
+        print(f'False! {num} is not less than or equal to 5.')
         
 except ValueError:
     print('That is incorrect!')
