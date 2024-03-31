@@ -68,7 +68,7 @@ print(True <= False)
 # than 5.')". If the number is less than or equal to 5, the third 'elif:'
 # statement is executed "print(f'True! {num} is less than or equal
 # to 5.')". If the number is greater than or equal to 5, the last 'elif:'
-# statement is executed "print(f'False! {num} is is not greater than or
+# statement is executed "print(f'True! {num} is greater than or
 # equal to 5.')".
 
 # Note: Python executes/runs programs starting from the top, downward.
