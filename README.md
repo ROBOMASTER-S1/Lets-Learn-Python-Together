@@ -1,4 +1,4 @@
-# Let's-Learn-Python-Together
+# README
 
 ![image](https://user-images.githubusercontent.com/34896540/223653543-f49dc6af-a0b4-4fa6-8646-1a384483692b.png)
 ![SCIENCE](https://github.com/ROBOMASTER-S1/Lets-Learn-Python-Together/assets/34896540/4d9df1e3-2b05-4d1e-bd9e-48c61483ea2f)
