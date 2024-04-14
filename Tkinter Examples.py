@@ -1,8 +1,8 @@
 '''TKINTER:'''
 '''
-Welcome to tkinter, the canvas part of Python. With tkinter you can draw lines and \
-shapes such as ovals, arcs and rectangles. You can also create some wild digital \
-string-art designs with for-loops. With tkinter you can also create buttons and input \
+Welcome to tkinter, the canvas part of Python. With tkinter you can draw lines and
+shapes such as ovals, arcs and rectangles. You can also create some wild digital
+string-art designs with for-loops. With tkinter you can also create buttons and input
 boxes. We will get into all this and more about tkinter, the fun part of Python programming.
 '''
 # Let's create a simple tkinter window. Type and execute/run this tkinter program
