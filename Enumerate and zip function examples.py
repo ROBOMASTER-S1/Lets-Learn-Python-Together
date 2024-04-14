@@ -1,3 +1,5 @@
+# Created and written by Joseph C. Richardson, GitHub.com
+
 # Almost three and a half years later, and I'm still learning
 # how to master Python. I'm always trying new ideas through
 # others so I can learn what Python is truly all about.
